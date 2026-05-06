@@ -112,7 +112,7 @@ def panel_a(ax: Any) -> None:
     draw_box(ax, (0.32, 0.31), (0.20, 0.14), "ESMFold\nmonomer models", "#eaf7ef")
     draw_box(ax, (0.57, 0.56), (0.20, 0.14), "Foldseek\nPDB100 search", "#f0e9f8")
     draw_box(ax, (0.57, 0.31), (0.20, 0.14), "Ambiguity +\nmodule evidence", "#fff6cc")
-    draw_box(ax, (0.83, 0.435), (0.15, 0.14), "Case roles\nfor Figure 6", "#eaf2fb", fontsize=8.4)
+    draw_box(ax, (0.83, 0.435), (0.15, 0.14), "Evidence regimes\n+ case table", "#eaf2fb", fontsize=8.0)
     draw_arrow(ax, (0.24, 0.73), (0.32, 0.63))
     draw_arrow(ax, (0.24, 0.50), (0.32, 0.38))
     draw_arrow(ax, (0.24, 0.27), (0.32, 0.38))
@@ -138,8 +138,8 @@ def panel_b(ax: Any) -> None:
         ax.text(bar.get_x() + bar.get_width() / 2, value + 1.2, str(value), ha="center", va="bottom", fontsize=11, fontweight="bold")
 
 
-def panel_c(ax: Any, rows: list[dict[str, str]]) -> None:
-    add_panel_label(ax, "C", "Structure-evidence classes")
+def panel_c(ax: Any, rows: list[dict[str, str]], label: str = "C") -> None:
+    add_panel_label(ax, label, "Structure-evidence classes")
     candidates = [row for row in rows if row.get("figure6_recommendation") != "matched_control_reference"]
     order = [
         ("low_model_confidence", "Low-confidence\nmodel", "#b45309"),
@@ -217,8 +217,8 @@ def panel_d(ax: Any, rows: list[dict[str, str]]) -> None:
     ax.text(0.04, -0.05, "Cases are prioritized hypotheses for downstream validation.", fontsize=9.3, color="#4b5563", transform=ax.transAxes)
 
 
-def panel_e(ax: Any, enrichment_rows: list[dict[str, str]]) -> None:
-    add_panel_label(ax, "E", "Independent evidence regime enrichment")
+def panel_e(ax: Any, enrichment_rows: list[dict[str, str]], label: str = "E") -> None:
+    add_panel_label(ax, label, "Independent evidence regime enrichment")
     by_feature = {row.get("feature"): row for row in enrichment_rows}
     features = [
         ("mmseqs_label_agreement", "MMseqs2 label\nagreement"),
@@ -285,20 +285,18 @@ def main() -> int:
         }
     )
 
-    fig = plt.figure(figsize=(13.8, 14.8))
+    fig = plt.figure(figsize=(13.2, 8.6))
     gs = fig.add_gridspec(
-        nrows=3,
+        nrows=2,
         ncols=2,
-        height_ratios=[1.05, 1.55, 0.92],
+        height_ratios=[1.0, 1.0],
         width_ratios=[1, 1],
-        hspace=0.82,
-        wspace=0.40,
+        hspace=0.60,
+        wspace=0.32,
     )
     panel_a(fig.add_subplot(gs[0, 0]))
-    panel_b(fig.add_subplot(gs[0, 1]))
-    panel_c(fig.add_subplot(gs[1, 0]), case_rows)
-    panel_d(fig.add_subplot(gs[1, 1]), case_rows)
-    panel_e(fig.add_subplot(gs[2, :]), enrichment_rows)
+    panel_c(fig.add_subplot(gs[0, 1]), case_rows, label="B")
+    panel_e(fig.add_subplot(gs[1, :]), enrichment_rows, label="C")
 
     out_prefix = Path(args.output_prefix)
     out_prefix.parent.mkdir(parents=True, exist_ok=True)

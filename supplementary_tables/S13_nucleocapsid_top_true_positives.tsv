@@ -1,0 +1,51 @@
+protein_accession	probability	true_label	predicted_at_threshold	genome_version	virus_family	host_taxid_key	description	cds_product
+YP_009126740.1	0.9997337460517883	1	1	NC_026619.1	Peribunyaviridae	3497	nucleocapsid [Mulberry vein banding virus]	nucleocapsid
+YP_010839920.1	0.999397873878479	1	1	NC_078244.1	Peribunyaviridae	569589	nucleocapsid [Gan Gan virus]	nucleocapsid
+YP_010839907.1	0.9992817044258118	1	1	NC_078231.1	Peribunyaviridae	10036	nucleocapsid [Mapputta virus]	nucleocapsid
+YP_009666927.1	0.9992087483406067	1	1	NC_043598.1	Peribunyaviridae	2726158	nucleocapsid protein [Buttonwillow virus]	nucleocapsid protein
+YP_009117084.1	0.9990689158439636	1	1	NC_026282.1	Peribunyaviridae	10036	nucleocapsid [Maprik virus]	nucleocapsid
+YP_009666925.1	0.998765230178833	1	1	NC_043596.1	Peribunyaviridae	9354	nucleocapsid protein [Utinga virus]	nucleocapsid protein
+YP_009666933.1	0.9986414313316345	1	1	NC_043604.1	Peribunyaviridae	2938501	nucleocapsid protein N [Rio Preto da Eva virus]	nucleocapsid protein N
+YP_010085069.1	0.9984717965126038	1	1	NC_055186.1	Peribunyaviridae	162997	nucleocapsid protein [Facey's Paddock virus]	nucleocapsid protein
+YP_008400136.1	0.9982162117958069	1	1	NC_022037.1	Peribunyaviridae	2912049	nucleocapsid [Brazoran virus]	nucleocapsid
+YP_010085072.1	0.9981796741485596	1	1	NC_055189.1	Peribunyaviridae	184063	nucleocapsid protein N [Tapirape virus]	nucleocapsid protein N
+YP_009512927.1	0.9981212019920349	1	1	NC_039188.1	Peribunyaviridae	629757	nucleocapsid protein [Orthobunyavirus wyeomyiae]	nucleocapsid protein
+YP_009362025.1	0.9981209635734558	1	1	NC_034458.1	Peribunyaviridae	1406360	nucleocapsid [Kibale virus]	nucleocapsid
+YP_009507863.1	0.998005211353302	1	1	NC_038721.1	Peribunyaviridae	10090	nucleocapsid protein [Anopheles B virus]	nucleocapsid protein
+YP_010839534.1	0.9979616403579712	1	1	NC_077914.1	Peribunyaviridae	43163	nucleocapsid protein [Matruh virus]	nucleocapsid protein
+YP_010840271.1	0.9974545836448669	1	1	NC_078565.1	Peribunyaviridae	27706	nucleocapsid [Largemouth bass bunyavirus]	nucleocapsid
+YP_009666935.1	0.9974334836006165	1	1	NC_043606.1	Peribunyaviridae	10090	nucleocapsid protein [Tataguine virus]	nucleocapsid protein
+YP_009666897.1	0.9973617196083069	1	1	NC_043572.1	Peribunyaviridae	53549	nucleocapsid protein [Sororoca virus]	nucleocapsid protein
+YP_010839622.1	0.9970743656158447	1	1	NC_077985.1	Peribunyaviridae	10090	nucleocapsid [Anopheles A virus]	nucleocapsid
+YP_009666887.1	0.9970190525054932	1	1	NC_043562.1	Peribunyaviridae	10090	nucleocapsid [Leanyer virus]	nucleocapsid
+YP_008709778.1	0.9967870712280273	1	1	NC_022597.1	Peribunyaviridae	376584	nucleocapsid [Murrumbidgee virus]	nucleocapsid
+YP_009666899.1	0.9967093467712402	1	1	NC_043574.1	Peribunyaviridae	10090	nucleocapsid protein [Cachoeira Porteira virus]	nucleocapsid protein
+YP_009507880.1	0.9966555833816528	1	1	NC_038737.1	Peribunyaviridae	9515	nucleocapsid protein [Guama virus]	nucleocapsid protein
+YP_010840630.1	0.9964168071746826	1	1	NC_078884.1	Peribunyaviridae	545656	nucleocapsid protein [Lednice virus]	nucleocapsid protein
+YP_009507868.1	0.9964151382446289	1	1	NC_038726.1	Peribunyaviridae	10090	nucleocapsid protein [Catu virus]	nucleocapsid protein
+YP_009507875.1	0.9962471127510071	1	1	NC_038732.1	Peribunyaviridae	10090	nucleocapsid protein [Orthobunyavirus guajaraense]	nucleocapsid protein
+YP_009507867.1	0.9961979985237122	1	1	NC_038725.1	Peribunyaviridae	284565	nucleocapsid protein [Bimiti virus]	nucleocapsid protein
+YP_009667019.1	0.9959755539894104	1	1	NC_043673.1	Peribunyaviridae	1678250	nucleocapsid protein [Witwatersrand virus]	nucleocapsid protein
+YP_009094046.1	0.9957547187805176	1	1	NC_025345.1	Sunviridae	51883	nucleocapsid [Sunshine Coast virus]	nucleocapsid
+YP_009300683.1	0.9957488775253296	1	1	NC_031223.1	Peribunyaviridae	1	nucleocapsid protein [Shuangao Insect Virus 1]	nucleocapsid protein
+YP_009507853.1	0.9956841468811035	1	1	NC_038712.1	Peribunyaviridae	562834	nucleocapsid [Herbert virus strain F23/CI/2004]	nucleocapsid
+YP_010839557.1	0.995512068271637	1	1	NC_077935.1	Peribunyaviridae	980429	nucleocapsid protein [Infirmatus virus]	nucleocapsid protein
+YP_009362055.1	0.9948539137840271	1	1	NC_034483.1	Peribunyaviridae	70610	nucleocapsid protein [Capim virus]	nucleocapsid protein
+YP_009666894.1	0.9946204423904419	1	1	NC_043569.1	Peribunyaviridae	10090	nucleocapsid protein [Iaco virus]	nucleocapsid protein
+YP_010840791.1	0.9945971965789795	1	1	NC_079030.1	Peribunyaviridae	53527	nucleocapsid [Botambi virus]	nucleocapsid
+YP_009666955.1	0.9944349527359009	1	1	NC_043622.1	Peribunyaviridae	284563	nucleocapsid protein [Bellavista virus]	nucleocapsid protein
+YP_009666901.1	0.9943777918815613	1	1	NC_043576.1	Peribunyaviridae	9651	nucleocapsid protein [Jatobal virus]	nucleocapsid protein
+YP_009666295.1	0.9942890405654907	1	1	NC_043488.1	Hexponivirinae	2912049	putative nucleocapsid [Kadiweu virus]	putative nucleocapsid
+YP_009507864.1	0.9941366910934448	1	1	NC_038722.1	Peribunyaviridae	10090	nucleocapsid protein [Batama virus]	nucleocapsid protein
+YP_010085065.1	0.9937067627906799	1	1	NC_055182.1	Peribunyaviridae	2007218	nucleocapsid protein [Macaua virus]	nucleocapsid protein
+YP_010839679.1	0.9935332536697388	1	1	NC_078035.1	Fimoviridae	23216	nucleocapsid protein [blackberry leaf mottle-associated virus]	nucleocapsid protein
+YP_010839912.1	0.9930784106254578	1	1	NC_078236.1	Peribunyaviridae	10036	nucleocapsid [Buffalo Creek virus]	nucleocapsid
+YP_009664556.1	0.9930598735809326	1	1	NC_043035.1	Peribunyaviridae	69822	nucleocapsid protein [Umbre virus]	nucleocapsid protein
+YP_010839905.1	0.9921889305114746	1	1	NC_078229.1	Peribunyaviridae	unknown	nucleocapsid [Oyo virus]	nucleocapsid
+YP_010840265.1	0.9921739101409912	1	1	NC_078559.1	Peribunyaviridae	9121	nucleocapsid protein [Khurdun virus]	nucleocapsid protein
+YP_009666891.1	0.9920841455459595	1	1	NC_043566.1	Peribunyaviridae	10090	nucleocapsid protein [Anhembi virus]	nucleocapsid protein
+YP_010088070.1	0.9917188882827759	1	1	NC_055646.1	Fimoviridae	165200	nucleocapsid protein [Emaravirus kiwii]	nucleocapsid protein
+YP_009237281.1	0.9917123317718506	1	1	NC_029574.1	Fimoviridae	3821	putative nucleocapsid protein [Emaravirus cajani]	putative nucleocapsid protein
+YP_010840854.1	0.9911807179450989	1	1	NC_079073.1	Riboviria	229701	nucleocapsid protein [Arceuthobium sichuanense virus 1]	nucleocapsid protein
+YP_006590077.1	0.990970253944397	1	1	NC_018464.1	Peribunyaviridae	9913	nucleocapsid protein [Shamonda virus]	nucleocapsid protein
+YP_010840798.1	0.9909365773200989	1	1	NC_079035.1	Peribunyaviridae	59117	nucleocapsid protein [Kowanyama virus]	nucleocapsid protein

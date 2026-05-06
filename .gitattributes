@@ -1,0 +1,13 @@
+*.tsv text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=crlf
+*.tex text eol=lf
+*.md text eol=lf
+*.pdf binary
+*.png binary
+*.gz binary
+*.zip binary
+

@@ -1,0 +1,5 @@
+split_file	relative_path
+calibration_split.tsv	data_manifest/calibration_split.tsv
+default_split.tsv	data_manifest/default_split.tsv
+family_holdout_split.tsv	data_manifest/family_holdout_split.tsv
+host_holdout_split.tsv	data_manifest/host_holdout_split.tsv

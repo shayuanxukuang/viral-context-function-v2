@@ -1,0 +1,13 @@
+protein_accession	predicted_label	top_probability_calibrated	context_gain	high_context_gain	nearest_homolog_identity	nearest_homolog_bits	identity_bin	context_gain_bin	low_sequence_identity	low_sequence_high_context	module_supported	hypothetical_or_unknown	family	host_group	family_holdout_split
+YP_009666897.1	nucleocapsid	0.991748571396	0.940286159515	1			no_hit	>=0.50	1	1	1	0	Peribunyaviridae	Metazoa	test
+YP_009666899.1	nucleocapsid	0.990148663521	0.93783724308	1			no_hit	>=0.50	1	1	1	0	Peribunyaviridae	Metazoa	test
+YP_009512927.1	nucleocapsid	0.993717074394	0.886083364487	1			no_hit	>=0.50	1	1	1	0	Peribunyaviridae	Metazoa	test
+YP_009337740.1	capsid_head	0.992697298527	0.801342666149	1			no_hit	>=0.50	1	1	1	1	Riboviria	root	test
+YP_009342305.1	capsid_head	0.990854978561	0.760164141655	1			no_hit	>=0.50	1	1	1	1	Riboviria	root	test
+YP_009337392.1	capsid_head	0.992761790752	0.726737737656	1			no_hit	>=0.50	1	1	0	1	Riboviria	root	test
+YP_009337270.1	capsid_head	0.989971399307	0.719755232334	1			no_hit	>=0.50	1	1	1	1	Riboviria	root	test
+YP_010840622.1	nucleocapsid	0.989975869656	0.577805578709	1			no_hit	>=0.50	1	1	1	0	Peribunyaviridae	Metazoa	test
+YP_438172.1	portal_terminase_packaging	0.989396810532	0.453117787838	1			no_hit	0.20-0.50	1	1	1	0	Gammaherpesvirinae	Metazoa	test
+YP_010084498.1	portal_terminase_packaging	0.9922285676	0.418399095535	1	27.2	237.0	20-30	0.20-0.50	1	1	1	0	Gammaherpesvirinae	Metazoa	test
+YP_009337908.1	capsid_head	0.992491662502	0.236379265785	1			no_hit	0.20-0.50	1	1	1	1	Riboviria	root	test
+YP_009507868.1	nucleocapsid	0.989448785782	0.223162531853	1			no_hit	0.20-0.50	1	1	1	0	Peribunyaviridae	Metazoa	test

@@ -1,0 +1,73 @@
+scheme	subset	query	target	pident	evalue	bits	qcov	tcov	query_labels	target_labels
+target_validation	all_targets	YP_009666897.1							[]	[]
+target_validation	all_targets	YP_009666899.1							[]	[]
+target_validation	all_targets	YP_009512927.1							[]	[]
+target_validation	all_targets	YP_009337740.1							[]	[]
+target_validation	all_targets	YP_009342305.1							[]	[]
+target_validation	all_targets	YP_009881537.1	YP_004300743.1	53.8	1.524E-216	682.0	1.000	1.000	"[""tail_fiber_receptor""]"	"[""tail_fiber_receptor""]"
+target_validation	all_targets	YP_009337392.1							[]	[]
+target_validation	all_targets	YP_009337270.1							[]	[]
+target_validation	all_targets	YP_010680760.1	YP_010679527.1	63.1	3.034E-119	385.0	0.991	0.979	[]	[]
+target_validation	all_targets	YP_010681280.1	YP_010679527.1	63.4	5.084E-121	391.0	0.991	0.979	[]	[]
+target_validation	all_targets	YP_010840622.1							[]	[]
+target_validation	all_targets	YP_950542.1	YP_010079244.1	70.9	4.470E-211	656.0	1.000	0.990	"[""tail_assembly""]"	"[""tail_assembly""]"
+target_validation	all_targets	YP_007675790.1	YP_009884387.1	49.7	2.549E-67	230.0	0.956	0.969	[]	[]
+target_validation	all_targets	YP_438172.1							[]	[]
+target_validation	all_targets	YP_010084498.1	YP_009176934.1	27.2	1.100E-64	237.0	0.947	0.879	"[""capsid_head""]"	"[""capsid_head"", ""portal_terminase_packaging""]"
+target_validation	all_targets	YP_010658686.1	YP_009884387.1	49.3	3.193E-63	218.0	0.956	0.969	[]	[]
+target_validation	all_targets	YP_009043771.1	YP_009884387.1	47.9	3.951E-62	215.0	0.956	0.969	[]	[]
+target_validation	all_targets	YP_009875551.1	YP_009884387.1	50.2	1.047E-64	223.0	0.952	0.969	[]	[]
+target_validation	all_targets	YP_009874071.1	YP_009884387.1	49.3	2.580E-64	222.0	0.956	0.969	[]	[]
+target_validation	all_targets	YP_009882250.1	YP_009615634.1	54.3	4.830E-221	695.0	1.000	1.000	"[""tail_fiber_receptor""]"	"[""tail_fiber_receptor""]"
+target_validation	all_targets	YP_010681710.1	YP_010679527.1	57.4	2.465E-116	378.0	0.982	0.979	[]	[]
+target_validation	all_targets	YP_009887186.1	YP_009615634.1	54.0	1.005E-221	697.0	1.000	1.000	"[""tail_fiber_receptor""]"	"[""tail_fiber_receptor""]"
+target_validation	all_targets	YP_008433402.1	YP_010303278.1	56.5	6.760E-57	222.0	0.170	0.217	[]	[]
+target_validation	all_targets	YP_009337908.1							[]	[]
+target_validation	all_targets	YP_010681552.1	YP_010679336.1	59.7	3.264E-120	389.0	0.979	0.997	[]	[]
+target_validation	all_targets	YP_009507868.1							[]	[]
+target_validation	all_targets	YP_010740217.1	YP_010679527.1	57.1	3.375E-116	377.0	0.982	0.979	[]	[]
+target_validation	all_targets	YP_009666927.1							[]	[]
+target_validation	all_targets	YP_009362986.1							[]	[]
+target_validation	all_targets	YP_009666887.1							[]	[]
+target_validation	all_targets	YP_009342304.1	YP_009032636.1	30.4	7.287E-06	51.0	0.488	0.327	[]	"[""capsid_head""]"
+target_validation	all_targets	YP_009337301.1							[]	[]
+target_validation	all_targets	YP_004010297.1	YP_009324046.1	49.2	9.927E-166	534.0	0.970	0.955	"[""tail_fiber_receptor"", ""tail_assembly"", ""lysis""]"	"[""tail_fiber_receptor"", ""tail_assembly"", ""lysis""]"
+target_validation	all_targets	YP_009336968.1	NP_619676.1	28.4	1.261E-13	74.0	0.769	0.519	[]	"[""capsid_head""]"
+target_validation	all_targets	YP_009336785.1	YP_009142777.1	34.7	1.771E-24	112.0	0.381	0.411	[]	"[""capsid_head""]"
+target_validation	all_targets	YP_010679883.1	YP_010679355.1	51.1	2.694E-50	179.0	0.972	0.970	[]	[]
+target_validation	all_targets	YP_010680019.1	YP_009223803.1	63.1	0.000E+00	1312.0	0.983	0.985	"[""polymerase""]"	"[""polymerase""]"
+target_validation	all_targets	YP_010839920.1							[]	[]
+target_validation	all_targets	YP_010657796.1	YP_010079237.1	54.1	7.371E-114	374.0	0.998	0.998	"[""tail_assembly""]"	"[""tail_assembly""]"
+target_validation	all_targets	YP_009880558.1	YP_009882947.1	59.2	2.494E-213	669.0	0.983	0.972	[]	"[""portal_terminase_packaging""]"
+target_validation	all_targets	NP_570774.1	YP_009051985.1	32.2	3.474E-31	129.0	0.862	0.394	[]	"[""portal_terminase_packaging""]"
+target_validation	all_targets	YP_010084588.1	YP_073816.1	27.7	8.579E-64	235.0	0.921	0.833	[]	"[""capsid_head"", ""portal_terminase_packaging""]"
+target_validation	all_targets	YP_007675791.1	YP_010658492.1	63.3	9.589E-220	687.0	0.923	0.929	[]	"[""portal_terminase_packaging""]"
+target_validation	all_targets	YP_009875550.1	YP_007005834.1	60.2	2.885E-214	672.0	0.933	0.945	"[""portal_terminase_packaging""]"	[]
+target_validation	all_targets	YP_010658685.1	YP_010658492.1	58.1	1.059E-213	670.0	0.987	0.987	"[""portal_terminase_packaging""]"	"[""portal_terminase_packaging""]"
+target_validation	all_targets	YP_009874070.1	YP_010658492.1	57.8	4.146E-211	662.0	0.987	0.987	[]	"[""portal_terminase_packaging""]"
+target_validation	all_targets	YP_004009814.1	YP_004300776.1	38.4	3.030E-68	248.0	0.816	0.825	"[""tail_fiber_receptor"", ""tail_assembly""]"	"[""tail_fiber_receptor"", ""tail_assembly""]"
+target_validation	all_targets	YP_010681399.1							[]	[]
+target_validation	all_targets	YP_009882257.1	YP_009146601.1	49.9	2.714E-167	539.0	0.971	0.957	"[""tail_fiber_receptor"", ""tail_assembly"", ""lysis""]"	"[""tail_fiber_receptor"", ""tail_assembly"", ""lysis""]"
+target_validation	all_targets	YP_008433375.1	YP_009188914.1	42.5	2.832E-43	160.0	0.966	0.975	"[""lysis""]"	"[""lysis""]"
+target_validation	all_targets	YP_009337337.1							[]	[]
+target_validation	all_targets	YP_010681528.1	YP_010679498.1	68.6	0.000E+00	1552.0	1.000	0.999	"[""polymerase""]"	"[""polymerase""]"
+target_validation	all_targets	YP_010840271.1							[]	[]
+target_validation	all_targets	YP_010740196.1	YP_010679498.1	74.2	0.000E+00	1707.0	0.998	0.998	"[""polymerase""]"	"[""polymerase""]"
+target_validation	all_targets	NP_740662.1	NP_062884.1	100.0	2.353E-195	604.0	1.000	0.282	"[""capsid_head""]"	"[""polyprotein""]"
+target_validation	all_targets	NP_862879.1	NP_795521.1	64.9	7.533E-126	403.0	0.977	0.980	"[""capsid_head""]"	[]
+target_validation	all_targets	YP_003347329.1	YP_003347499.1	100.0	5.501E-194	600.0	1.000	1.000	"[""capsid_head""]"	"[""capsid_head""]"
+target_validation	all_targets	NP_690779.1	YP_009829898.1	100.0	4.613E-202	623.0	1.000	1.000	"[""lysis""]"	"[""lysis""]"
+target_validation	all_targets	YP_001642397.1	YP_529896.1	90.2	3.865E-161	505.0	0.820	1.000	"[""lysis""]"	"[""lysis""]"
+target_validation	all_targets	YP_007007184.1	YP_010842918.1	99.6	3.645E-193	597.0	1.000	1.000	"[""lysis""]"	"[""lysis""]"
+target_validation	all_targets	YP_010840747.1	YP_010840048.1	57.3	4.910E-102	334.0	0.990	0.967	"[""nucleocapsid""]"	[]
+target_validation	all_targets	YP_009551593.1	YP_010839743.1	26.3	3.310E-04	46.0	0.420	0.514	"[""nucleocapsid""]"	"[""nucleocapsid""]"
+target_validation	all_targets	YP_009664552.1	YP_010840007.1	58.0	3.435E-103	338.0	0.928	0.907	"[""nucleocapsid""]"	"[""nucleocapsid""]"
+target_validation	all_targets	YP_009149176.1	YP_009285455.1	92.3	1.492E-187	581.0	1.000	1.000	"[""polymerase""]"	"[""polymerase""]"
+target_validation	all_targets	YP_009177118.1	NP_955202.1	69.8	7.375E-145	458.0	0.997	0.990	"[""polymerase""]"	"[""polymerase""]"
+target_validation	all_targets	YP_009177240.1	YP_006200958.1	53.6	2.239E-86	289.0	0.997	0.997	"[""polymerase""]"	"[""polymerase""]"
+target_validation	all_targets	YP_007010922.1	YP_009829814.1	53.8	1.565E-89	298.0	0.993	0.997	"[""portal_terminase_packaging""]"	"[""portal_terminase_packaging""]"
+target_validation	all_targets	YP_007678074.1	YP_009277304.1	44.4	4.600E-66	230.0	0.980	0.961	"[""portal_terminase_packaging""]"	"[""portal_terminase_packaging""]"
+target_validation	all_targets	YP_008492997.1	YP_009458640.1	66.4	1.438E-132	422.0	1.000	0.449	"[""portal_terminase_packaging""]"	[]
+target_validation	all_targets	NP_944295.1	YP_007236808.1	85.6	2.214E-165	517.0	1.000	0.987	"[""tail_fiber_receptor"", ""tail_assembly""]"	"[""tail_fiber_receptor"", ""tail_assembly""]"
+target_validation	all_targets	YP_001994481.1	YP_009211733.1	95.7	7.436E-171	533.0	0.947	0.953	"[""tail_assembly""]"	"[""tail_assembly""]"
+target_validation	all_targets	YP_009005751.1	YP_009638270.1	52.0	8.267E-108	351.0	1.000	1.000	"[""tail_assembly""]"	"[""tail_assembly""]"

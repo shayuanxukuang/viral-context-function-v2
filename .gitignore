@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+*.conda/
+
+# Large/generated data kept out of git
+data/
+runs/
+artifacts/
+checkpoints/
+embeddings/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# Structure databases and predicted structures
+foldseek_db/
+pdb100/
+*.pdb
+*.cif
+*.bcif
+
+# Temporary files
+*.tmp
+*.part
+*.log
+

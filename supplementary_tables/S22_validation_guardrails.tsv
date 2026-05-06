@@ -1,0 +1,6 @@
+item	manuscript_safe_wording
+main_claim	Genome context complements sequence and structure by prioritizing and sometimes disambiguating candidate viral protein functions under leakage-aware OOD evaluation.
+candidate_language	Use prioritized, supported, structure-consistent, ambiguous, or hypothesis.
+forbidden_candidate_language	Do not call candidates validated or confirmed without independent experimental evidence.
+posthoc_evidence	Product descriptions, MMseqs2 hits, Foldseek hits, and module weak labels are post hoc triage evidence only.
+gate_wording	Use validation-targeted gate unless true held-out FDR control is demonstrated.

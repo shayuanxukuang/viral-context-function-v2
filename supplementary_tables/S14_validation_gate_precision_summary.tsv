@@ -1,0 +1,2 @@
+calibration_target_fdr	calibration_target_precision	candidate_gate_threshold	empirical_validation_top1_precision	selected_test_candidates	labeled_test_true_positives	labeled_test_top1_precision	labeled_test_top1_fdp	interpretation
+0.1	0.9	0.989124417305	0.9	11839	9321	0.787313117662	0.212686882338	Threshold targets 10% false discovery on calibration/validation predictions; OOD labeled-test precision is reported separately and is lower, so candidate calls are prioritized hypotheses.

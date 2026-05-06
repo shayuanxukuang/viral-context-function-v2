@@ -1,0 +1,15 @@
+scheme	split	protein_count	family_count	host_supergroup_count
+family_holdout	test	66837	122	9
+family_holdout	train	589034	1046	12
+family_holdout	val	57616	115	10
+host_holdout	test	69412	333	10
+host_holdout	train	535976	1122	12
+host_holdout	val	108099	308	10
+host_supergroup_holdout	test	1038	44	1
+host_supergroup_holdout	train	712449	1273	11
+sequence_sketch_holdout	test	71844	1067	12
+sequence_sketch_holdout	train	569725	1245	12
+sequence_sketch_holdout	val	71918	1108	12
+species_holdout	test	74377	406	12
+species_holdout	train	564510	1140	12
+species_holdout	val	74600	417	11

@@ -1,0 +1,7 @@
+tier	count	interpretation
+any_module_supported_assignment	11215	Broad placement in a discovered module; not a narrow validation filter.
+clustered_module_assignment	11215	Candidate accession maps to a module-discovery cluster.
+high_coherence_cluster_assignment	11184	Cluster neighborhood consistency >= 0.90.
+high_priority_cluster_assignment	11135	Cluster priority score >= 5.
+high_context_gain_with_cluster	24	Narrower subset where context materially changed the prediction and a module cluster is present.
+manual_casebook_supported	10	Manual casebooks generated for inspection; not equivalent to validation.

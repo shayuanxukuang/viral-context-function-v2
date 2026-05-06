@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: Please cite this software and dataset if you use the ViruFunc V2 context benchmark.
+title: ViruFunc V2 leakage-aware genome-context benchmark
+version: 0.1.0
+date-released: 2026-05-06
+authors:
+  - family-names: Wang
+    given-names: Kuanghao
+  - family-names: Shi
+    given-names: Hong

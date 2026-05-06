@@ -1,0 +1,4 @@
+display_metric	metric	observed	null_mean	null_ci_low	null_ci_high	empirical_p_value	iterations
+neighborhood consistency	weighted_neighborhood_consistency	0.9083394353592059	0.9022146285900253	0.9016027987958669	0.9029045643153527	0.001996007984031936	500
+structural/membrane enrichment	weighted_structural_membrane_vote_fraction	0.14733816071380149	0.13872972093401686	0.13808626908578098	0.1394224771513032	0.001996007984031936	500
+context-sensitive label enrichment	weighted_context_sensitive_label_fraction	0.3016439438846078	0.28560944035705577	0.2846456931320247	0.28656458364812043	0.001996007984031936	500

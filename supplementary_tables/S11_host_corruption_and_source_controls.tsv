@@ -1,0 +1,30 @@
+panel	row_type	split	model_label	source	macro_ap	delta_macro_ap_vs_protein_only	macro_f1	delta_macro_f1_vs_protein_only	run_name
+A-B	source_addback	family_holdout	protein_only	target pLM only	0.669034024935	0	0.658442874018	0	protein_only.family_holdout
+A-B	source_addback	family_holdout	local_only	+ local neighborhood	0.677933021711	0.00889899677642	0.672007788158	0.0135649141405	genome_aware_denovo_addback_local_only.family_holdout
+A-B	source_addback	family_holdout	genome_only	+ genome organization	0.684082356045	0.0150483311106	0.680230407935	0.0217875339171	genome_aware_denovo_addback_genome_only.family_holdout
+A-B	source_addback	family_holdout	host_only	+ host metadata	0.673686850021	0.00465282508605	0.665091272359	0.00664839834158	genome_aware_denovo_addback_host_only.family_holdout
+A-B	source_addback	family_holdout	local_genome	+ local + genome	0.68606716866	0.0170331437254	0.681314421267	0.022871547249	genome_aware_denovo_addback_local_genome.family_holdout
+A-B	source_addback	family_holdout	all_clean_context	+ local + genome + host	0.686800402751	0.0177663778164	0.680879114331	0.0224362403137	genome_aware_denovo.family_holdout
+LOSO	leave_one_source_out	family_holdout	minus_local	Remove local neighborhood block	0.6837377075551513	9.157206277088381e-05	0.6789086150032293	-0.007421190048688908	genome_aware_denovo_biophysics_minus_local.family_holdout
+LOSO	leave_one_source_out	family_holdout	minus_genome_org	Remove genome organization block	0.6819735134947394	-0.001672621997640955	0.6863645465361958	3.47414842776228e-05	genome_aware_denovo_biophysics_minus_genome_org.family_holdout
+LOSO	leave_one_source_out	family_holdout	minus_host	Remove host metadata block	0.6854691873699852	0.0018230518776047866	0.6826308018277915	-0.003699003224126751	genome_aware_denovo_biophysics_minus_host.family_holdout
+C-D	host_corruption_or_shuffle	family_holdout	host_corruption	0.0	0.6836461354923804		0.6863298050519182		genome_aware_denovo_biophysics.family_holdout
+C-D	host_corruption_or_shuffle	family_holdout	host_corruption	1.0	0.679034963314948		0.6773624150649749		genome_aware_denovo_biophysics_host_corrupt_100.family_holdout
+C-D	host_corruption_or_shuffle	family_holdout	host_corruption	0.25	0.663413437846123		0.6709118168763615		genome_aware_denovo_biophysics_host_corrupt_25.family_holdout
+C-D	host_corruption_or_shuffle	family_holdout	host_corruption	0.5	0.6825729950096306		0.6770721471142193		genome_aware_denovo_biophysics_host_corrupt_50.family_holdout
+C-D	host_corruption_or_shuffle	family_holdout	host_corruption	0.75	0.6776724207764718		0.6831163667607013		genome_aware_denovo_biophysics_host_corrupt_75.family_holdout
+C-D	host_corruption_or_shuffle	family_holdout	host_shuffle_control	shuffle_within_family	0.6838559572170767		0.6916873672776961		genome_aware_denovo_biophysics_control_host_shuffle.family_holdout
+C-D	host_corruption_or_shuffle	host_holdout	host_corruption	0.0	0.7436417360421295		0.7193921355221172		genome_aware_denovo_biophysics.host_holdout
+C-D	host_corruption_or_shuffle	host_holdout	host_corruption	1.0	0.747130504939688		0.7195174982424286		genome_aware_denovo_biophysics_host_corrupt_100.host_holdout
+C-D	host_corruption_or_shuffle	host_holdout	host_corruption	0.25	0.7456123601592587		0.7160812683081498		genome_aware_denovo_biophysics_host_corrupt_25.host_holdout
+C-D	host_corruption_or_shuffle	host_holdout	host_corruption	0.5	0.7455795538281366		0.7201223778989432		genome_aware_denovo_biophysics_host_corrupt_50.host_holdout
+C-D	host_corruption_or_shuffle	host_holdout	host_corruption	0.75	0.7465958205210571		0.7190458353758159		genome_aware_denovo_biophysics_host_corrupt_75.host_holdout
+C-D	host_corruption_or_shuffle	host_holdout	host_shuffle_control	shuffle_within_family	0.7428109110768808		0.7157787381964168		genome_aware_denovo_biophysics_control_host_shuffle.host_holdout
+E	forbidden_feature_check	all	product_name	PASS					
+E	forbidden_feature_check	all	hypothetical_flag	PASS					
+E	forbidden_feature_check	all	uniprot_counts	PASS					
+E	forbidden_feature_check	all	pfam_interpro_cdd_hits	PASS					
+E	forbidden_feature_check	all	neighbor_true_labels	PASS					
+E	forbidden_feature_check	all	genome_local_label_counts	PASS					
+E	forbidden_feature_check	all	protein_feature_type	PASS					
+E	forbidden_feature_check	all	annotation_text_embedding	PASS					

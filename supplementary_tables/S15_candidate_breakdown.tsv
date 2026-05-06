@@ -1,0 +1,10 @@
+category	count
+validation-targeted proteins	11839
+validation-targeted protein-label assignments	12144
+unique proteins involved	11839
+unique genomes involved	2672
+hypothetical/uncharacterized/unknown assignments	1378
+hypothetical/uncharacterized/unknown unique proteins	1375
+high context-gain assignments delta_p>=0.2	27
+module-supported assignments	11215
+selected casebook candidates	10

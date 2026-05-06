@@ -1,0 +1,448 @@
+{
+  "created_at": "2026-04-30T02:04:11.945961+00:00",
+  "output_dir": "<PROJECT_ROOT>/data/v2_freeze",
+  "inputs": {
+    "protein_index": "<PROJECT_ROOT>/data/processed/training/viral_protein_training_index.tsv.gz",
+    "genome_index": "<PROJECT_ROOT>/data/processed/training/viral_genome_training_index.tsv.gz",
+    "strict_splits": "<PROJECT_ROOT>/data/processed/splits/viral_protein_strict_splits.tsv.gz",
+    "taxonomy": "<PROJECT_ROOT>/data/processed/taxonomy/observed_taxonomy.tsv.gz"
+  },
+  "host_split_column": "host_taxid_holdout_split",
+  "calibration_fraction": 0.1,
+  "debug_limit": 0,
+  "protein_count": 713487,
+  "genome_count": 19149,
+  "family_count": 1283,
+  "host_group_count": 12,
+  "label_count": 17,
+  "primary_label_count": 17,
+  "low_frequency_label_count": 0,
+  "label_positive_counts": {
+    "polymerase": 14353,
+    "helicase": 8183,
+    "protease": 5120,
+    "capsid_head": 13765,
+    "tail_fiber_receptor": 14973,
+    "tail_assembly": 49444,
+    "portal_terminase_packaging": 14115,
+    "lysis": 14190,
+    "envelope_glycoprotein": 3418,
+    "membrane_matrix": 6627,
+    "nucleocapsid": 673,
+    "integrase_recombinase": 2556,
+    "nuclease": 19690,
+    "methyltransferase": 3506,
+    "ligase": 3397,
+    "transcription_regulator": 4888,
+    "polyprotein": 1949
+  },
+  "top_families": [
+    [
+      "Tevenvirinae",
+      41162
+    ],
+    [
+      "Caudoviricetes",
+      24330
+    ],
+    [
+      "Markadamsvirinae",
+      21492
+    ],
+    [
+      "Kyanoviridae",
+      18091
+    ],
+    [
+      "Chimalliviridae",
+      15492
+    ],
+    [
+      "Baculoviridae",
+      13773
+    ],
+    [
+      "Gracegardnervirinae",
+      13682
+    ],
+    [
+      "Bastillevirinae",
+      13647
+    ],
+    [
+      "Straboviridae",
+      13566
+    ],
+    [
+      "Vequintavirinae",
+      12403
+    ],
+    [
+      "Megamimivirinae",
+      11791
+    ],
+    [
+      "Phycodnaviridae",
+      11528
+    ],
+    [
+      "Chordopoxvirinae",
+      8851
+    ],
+    [
+      "Cvivirinae",
+      8194
+    ],
+    [
+      "Fromanvirus",
+      8070
+    ],
+    [
+      "Pandoravirus",
+      7531
+    ],
+    [
+      "Twortvirinae",
+      7488
+    ],
+    [
+      "Studiervirinae",
+      7409
+    ],
+    [
+      "Ceeclamvirinae",
+      7362
+    ],
+    [
+      "Skurskavirinae",
+      6809
+    ],
+    [
+      "Guernseyvirinae",
+      6539
+    ],
+    [
+      "Weiservirinae",
+      6417
+    ],
+    [
+      "Aliceevansviridae",
+      6232
+    ],
+    [
+      "Bclasvirinae",
+      6189
+    ],
+    [
+      "Tempevirinae",
+      5773
+    ]
+  ],
+  "top_host_groups": [
+    [
+      "Bacteria",
+      564586
+    ],
+    [
+      "Metazoa",
+      68606
+    ],
+    [
+      "Amoebozoa",
+      28849
+    ],
+    [
+      "Viridiplantae",
+      20130
+    ],
+    [
+      "root",
+      15060
+    ],
+    [
+      "Archaea",
+      8409
+    ],
+    [
+      "SAR",
+      1817
+    ],
+    [
+      "OtherEukaryota",
+      1772
+    ],
+    [
+      "Excavata",
+      1249
+    ],
+    [
+      "source_host_only",
+      1040
+    ],
+    [
+      "Fungi",
+      1038
+    ],
+    [
+      "unknown",
+      931
+    ]
+  ],
+  "split_label_counts": {
+    "default": {
+      "train": {
+        "envelope_glycoprotein": 2696,
+        "nucleocapsid": 553,
+        "polymerase": 11521,
+        "capsid_head": 10967,
+        "membrane_matrix": 5200,
+        "polyprotein": 1549,
+        "transcription_regulator": 3861,
+        "protease": 4078,
+        "helicase": 6574,
+        "ligase": 2763,
+        "portal_terminase_packaging": 11267,
+        "methyltransferase": 2844,
+        "nuclease": 15824,
+        "integrase_recombinase": 2071,
+        "lysis": 11365,
+        "tail_assembly": 39555,
+        "tail_fiber_receptor": 11907
+      },
+      "test": {
+        "polymerase": 1354,
+        "nucleocapsid": 62,
+        "envelope_glycoprotein": 342,
+        "membrane_matrix": 649,
+        "capsid_head": 1393,
+        "helicase": 805,
+        "portal_terminase_packaging": 1409,
+        "protease": 512,
+        "ligase": 303,
+        "transcription_regulator": 488,
+        "polyprotein": 211,
+        "nuclease": 1821,
+        "methyltransferase": 292,
+        "lysis": 1358,
+        "tail_fiber_receptor": 1517,
+        "tail_assembly": 4661,
+        "integrase_recombinase": 234
+      },
+      "val": {
+        "polyprotein": 189,
+        "protease": 530,
+        "helicase": 804,
+        "polymerase": 1478,
+        "capsid_head": 1405,
+        "envelope_glycoprotein": 380,
+        "membrane_matrix": 778,
+        "portal_terminase_packaging": 1439,
+        "nucleocapsid": 58,
+        "transcription_regulator": 539,
+        "ligase": 331,
+        "nuclease": 2045,
+        "methyltransferase": 370,
+        "integrase_recombinase": 251,
+        "lysis": 1467,
+        "tail_fiber_receptor": 1549,
+        "tail_assembly": 5228
+      }
+    },
+    "family_holdout": {
+      "test": {
+        "envelope_glycoprotein": 369,
+        "nucleocapsid": 133,
+        "polymerase": 1344,
+        "capsid_head": 1808,
+        "transcription_regulator": 517,
+        "polyprotein": 212,
+        "membrane_matrix": 495,
+        "portal_terminase_packaging": 1389,
+        "protease": 435,
+        "helicase": 864,
+        "nuclease": 1751,
+        "methyltransferase": 311,
+        "ligase": 231,
+        "integrase_recombinase": 224,
+        "lysis": 1532,
+        "tail_fiber_receptor": 1176,
+        "tail_assembly": 4690
+      },
+      "train": {
+        "capsid_head": 11015,
+        "membrane_matrix": 5921,
+        "envelope_glycoprotein": 2981,
+        "polymerase": 11582,
+        "polyprotein": 1698,
+        "nucleocapsid": 532,
+        "protease": 4297,
+        "helicase": 6767,
+        "ligase": 2904,
+        "portal_terminase_packaging": 11496,
+        "transcription_regulator": 4116,
+        "methyltransferase": 2789,
+        "nuclease": 16011,
+        "integrase_recombinase": 2140,
+        "lysis": 11040,
+        "tail_assembly": 39238,
+        "tail_fiber_receptor": 13173
+      },
+      "val": {
+        "polyprotein": 39,
+        "polymerase": 1427,
+        "capsid_head": 942,
+        "envelope_glycoprotein": 68,
+        "helicase": 552,
+        "membrane_matrix": 211,
+        "nucleocapsid": 8,
+        "protease": 388,
+        "methyltransferase": 406,
+        "ligase": 262,
+        "nuclease": 1928,
+        "tail_assembly": 5516,
+        "lysis": 1618,
+        "tail_fiber_receptor": 624,
+        "portal_terminase_packaging": 1230,
+        "transcription_regulator": 255,
+        "integrase_recombinase": 192
+      }
+    },
+    "host_holdout": {
+      "train": {
+        "envelope_glycoprotein": 2543,
+        "nucleocapsid": 550,
+        "polymerase": 10660,
+        "capsid_head": 10679,
+        "membrane_matrix": 5116,
+        "polyprotein": 1513,
+        "protease": 3828,
+        "helicase": 5983,
+        "transcription_regulator": 3462,
+        "ligase": 2208,
+        "portal_terminase_packaging": 10574,
+        "methyltransferase": 2593,
+        "nuclease": 14642,
+        "integrase_recombinase": 2009,
+        "lysis": 10725,
+        "tail_assembly": 38297,
+        "tail_fiber_receptor": 9876
+      },
+      "val": {
+        "envelope_glycoprotein": 396,
+        "nucleocapsid": 46,
+        "polymerase": 2228,
+        "capsid_head": 1804,
+        "polyprotein": 211,
+        "membrane_matrix": 841,
+        "portal_terminase_packaging": 2212,
+        "helicase": 1373,
+        "protease": 821,
+        "ligase": 831,
+        "transcription_regulator": 947,
+        "methyltransferase": 543,
+        "integrase_recombinase": 338,
+        "nuclease": 3460,
+        "tail_assembly": 7211,
+        "tail_fiber_receptor": 3652,
+        "lysis": 2424
+      },
+      "test": {
+        "polymerase": 1465,
+        "capsid_head": 1282,
+        "helicase": 827,
+        "envelope_glycoprotein": 479,
+        "nucleocapsid": 77,
+        "membrane_matrix": 670,
+        "polyprotein": 225,
+        "transcription_regulator": 479,
+        "portal_terminase_packaging": 1329,
+        "protease": 471,
+        "ligase": 358,
+        "nuclease": 1588,
+        "methyltransferase": 370,
+        "integrase_recombinase": 209,
+        "tail_fiber_receptor": 1445,
+        "tail_assembly": 3936,
+        "lysis": 1041
+      }
+    },
+    "calibration": {
+      "test": {
+        "envelope_glycoprotein": 369,
+        "nucleocapsid": 133,
+        "polymerase": 1344,
+        "capsid_head": 1808,
+        "transcription_regulator": 517,
+        "polyprotein": 212,
+        "membrane_matrix": 495,
+        "portal_terminase_packaging": 1389,
+        "protease": 435,
+        "helicase": 864,
+        "nuclease": 1751,
+        "methyltransferase": 311,
+        "ligase": 231,
+        "integrase_recombinase": 224,
+        "lysis": 1532,
+        "tail_fiber_receptor": 1176,
+        "tail_assembly": 4690
+      },
+      "train": {
+        "capsid_head": 9906,
+        "membrane_matrix": 5157,
+        "envelope_glycoprotein": 2662,
+        "polymerase": 10394,
+        "polyprotein": 1517,
+        "nucleocapsid": 466,
+        "protease": 3854,
+        "helicase": 6085,
+        "ligase": 2615,
+        "portal_terminase_packaging": 10394,
+        "transcription_regulator": 3699,
+        "methyltransferase": 2467,
+        "nuclease": 14330,
+        "integrase_recombinase": 1901,
+        "lysis": 9966,
+        "tail_assembly": 35286,
+        "tail_fiber_receptor": 11911
+      },
+      "calibration": {
+        "capsid_head": 1109,
+        "polymerase": 1188,
+        "polyprotein": 181,
+        "envelope_glycoprotein": 319,
+        "nucleocapsid": 66,
+        "membrane_matrix": 764,
+        "helicase": 682,
+        "ligase": 289,
+        "nuclease": 1681,
+        "transcription_regulator": 417,
+        "portal_terminase_packaging": 1102,
+        "protease": 443,
+        "methyltransferase": 322,
+        "integrase_recombinase": 239,
+        "tail_assembly": 3952,
+        "lysis": 1074,
+        "tail_fiber_receptor": 1262
+      },
+      "val": {
+        "polyprotein": 39,
+        "polymerase": 1427,
+        "capsid_head": 942,
+        "envelope_glycoprotein": 68,
+        "helicase": 552,
+        "membrane_matrix": 211,
+        "nucleocapsid": 8,
+        "protease": 388,
+        "methyltransferase": 406,
+        "ligase": 262,
+        "nuclease": 1928,
+        "tail_assembly": 5516,
+        "lysis": 1618,
+        "tail_fiber_receptor": 624,
+        "portal_terminase_packaging": 1230,
+        "transcription_regulator": 255,
+        "integrase_recombinase": 192
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+name: viral-context-function-v2
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - pytorch
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy
+  - matplotlib
+  - seaborn
+  - tqdm

@@ -1,0 +1,11 @@
+{
+  "claim_frame": "Landscape analysis of when genome context complements the MMseqs2 sequence baseline.",
+  "assignment_count": 12144,
+  "low_sequence_high_context_count": 12,
+  "outputs": {
+    "landscape": "<PROJECT_ROOT>/runs/v2_sequence_structure_validation_server/landscape/tables/sequence_context_landscape.tsv",
+    "bins": "<PROJECT_ROOT>/runs/v2_sequence_structure_validation_server/landscape/tables/sequence_context_landscape_bins.tsv",
+    "label_summary": "<PROJECT_ROOT>/runs/v2_sequence_structure_validation_server/landscape/tables/context_gain_by_label.tsv",
+    "figures": "<PROJECT_ROOT>/runs/v2_sequence_structure_validation_server/landscape/figures"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "updated_on": "2026-04-16",
+  "datasets": [
+    {
+      "id": "ncbi_refseq_viral_proteins",
+      "group": "mvp_core",
+      "enabled": true,
+      "description": "NCBI RefSeq viral protein FASTA for protein-layer sequence inputs.",
+      "source": "NCBI RefSeq",
+      "url": "https://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.1.protein.faa.gz",
+      "destination": "data/raw/ncbi/refseq/viral.1.protein.faa.gz",
+      "tags": ["protein", "sequence", "refseq"]
+    },
+    {
+      "id": "ncbi_refseq_viral_genomes",
+      "group": "mvp_core",
+      "enabled": true,
+      "description": "NCBI RefSeq viral genomic FASTA for genome-layer context.",
+      "source": "NCBI RefSeq",
+      "url": "https://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.1.1.genomic.fna.gz",
+      "destination": "data/raw/ncbi/refseq/viral.1.1.genomic.fna.gz",
+      "tags": ["genome", "sequence", "refseq"]
+    },
+    {
+      "id": "ncbi_refseq_viral_genbank",
+      "group": "mvp_core",
+      "enabled": true,
+      "description": "NCBI RefSeq viral GenBank flatfiles for ORF order and local genome organization.",
+      "source": "NCBI RefSeq",
+      "url": "https://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.1.genomic.gbff.gz",
+      "destination": "data/raw/ncbi/refseq/viral.1.genomic.gbff.gz",
+      "tags": ["genome", "annotation", "genbank"]
+    },
+    {
+      "id": "ncbi_taxdump",
+      "group": "mvp_core",
+      "enabled": true,
+      "description": "NCBI taxonomy dump for lineage normalization and host-virus taxonomy joins.",
+      "source": "NCBI Taxonomy",
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz",
+      "destination": "data/raw/ncbi/taxonomy/taxdump.tar.gz",
+      "tags": ["taxonomy", "metadata", "lineage"]
+    },
+    {
+      "id": "virushostdb_pairs",
+      "group": "mvp_core",
+      "enabled": true,
+      "description": "Virus-Host DB virus-host association table.",
+      "source": "Virus-Host DB",
+      "url": "https://www.genome.jp/ftp/db/virushostdb/virushostdb.tsv",
+      "destination": "data/raw/virushostdb/virushostdb.tsv",
+      "tags": ["host", "metadata", "association"]
+    },
+    {
+      "id": "virushostdb_lineage",
+      "group": "mvp_core",
+      "enabled": true,
+      "description": "Virus-Host DB lineage table with taxonomic expansion.",
+      "source": "Virus-Host DB",
+      "url": "https://www.genome.jp/ftp/db/virushostdb/taxid2lineage_full_VH.tsv",
+      "destination": "data/raw/virushostdb/taxid2lineage_full_VH.tsv",
+      "tags": ["taxonomy", "metadata", "lineage"]
+    },
+    {
+      "id": "uniprot_reviewed_virus_annotations",
+      "group": "mvp_core",
+      "enabled": true,
+      "description": "UniProt reviewed viral proteins with core functional cross references.",
+      "source": "UniProt",
+      "url": "https://rest.uniprot.org/uniprotkb/stream?compressed=true&format=tsv&query=%28taxonomy_id%3A10239%29%20AND%20%28reviewed%3Atrue%29&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Corganism_name%2Corganism_id%2Clength%2Cgo_id%2Cec%2Cxref_pfam%2Cxref_interpro",
+      "destination": "data/raw/uniprot/uniprot_reviewed_virus_annotations.tsv.gz",
+      "tags": ["protein", "annotation", "uniprot", "go", "interpro"]
+    },
+    {
+      "id": "go_basic_ontology",
+      "group": "mvp_core",
+      "enabled": true,
+      "description": "Gene Ontology basic graph for functional label normalization.",
+      "source": "Gene Ontology",
+      "url": "https://current.geneontology.org/ontology/go-basic.obo",
+      "destination": "data/raw/go/go-basic.obo",
+      "tags": ["ontology", "go", "knowledge"]
+    },
+    {
+      "id": "interpro2go_mapping",
+      "group": "mvp_core",
+      "enabled": true,
+      "description": "InterPro to GO mapping for domain-to-function evidence propagation.",
+      "source": "InterPro",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go",
+      "destination": "data/raw/interpro/interpro2go",
+      "tags": ["ontology", "interpro", "go", "knowledge"]
+    },
+    {
+      "id": "ncbi_refseq_viral_wp_proteins",
+      "group": "optional_large",
+      "enabled": false,
+      "description": "NCBI RefSeq viral WP proteins for broader protein family coverage.",
+      "source": "NCBI RefSeq",
+      "url": "https://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.wp_protein.1.protein.faa.gz",
+      "destination": "data/raw/ncbi/refseq/viral.wp_protein.1.protein.faa.gz",
+      "tags": ["protein", "sequence", "refseq", "wp"]
+    },
+    {
+      "id": "uniprot_reviewed_virus_fasta",
+      "group": "optional_large",
+      "enabled": false,
+      "description": "UniProt reviewed viral FASTA for curated sequence cross checks.",
+      "source": "UniProt",
+      "url": "https://rest.uniprot.org/uniprotkb/stream?compressed=true&format=fasta&query=%28taxonomy_id%3A10239%29%20AND%20%28reviewed%3Atrue%29",
+      "destination": "data/raw/uniprot/uniprot_reviewed_virus.fasta.gz",
+      "tags": ["protein", "sequence", "uniprot"]
+    }
+  ]
+}

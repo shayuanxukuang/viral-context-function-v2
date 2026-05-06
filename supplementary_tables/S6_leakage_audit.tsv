@@ -1,0 +1,14 @@
+panel	scheme	metric	value	display_value	note
+C	default	exact_sequence_transfer_rate	0.27431454853978743	27.43%	Exact test proteins with an identical sequence in train.
+D	default	nearest_neighbor_macro_ap	0.3692410109831703	0.3692410109831703	Nearest-neighbor label transfer baseline.
+C	family_holdout	exact_sequence_transfer_rate	0.013704983766476652	1.37%	Exact test proteins with an identical sequence in train.
+D	family_holdout	nearest_neighbor_macro_ap	0.048052348748815435	0.048052348748815435	Nearest-neighbor label transfer baseline.
+C	host_holdout	exact_sequence_transfer_rate	0.1148792715956895	11.49%	Exact test proteins with an identical sequence in train.
+D	host_holdout	nearest_neighbor_macro_ap	0.17996916886736106	0.17996916886736106	Nearest-neighbor label transfer baseline.
+E	family_holdout_strict_zero_exact_transfer	removed_exact_transfer_proteins	916	916	Exact-transfer proteins removed from family-heldout test set.
+E	family_holdout_strict_zero_exact_transfer	delta_macro_ap	0.013273546310968443	+0.0133	Context gain retained after removing exact-transfer proteins.
+E	family_holdout_strict_zero_exact_transfer	delta_macro_f1	0.022315273180122608	+0.0223	Context gain retained after removing exact-transfer proteins.
+F	family_holdout_exact_transfer_audit	cross_family_identical	916	916	identical proteins assigned to different families
+F	family_holdout_exact_transfer_audit	same_taxid_different_family_annotation	0	0	same taxid with different family annotation
+F	family_holdout_exact_transfer_audit	shared_mobile_or_module_element_like	85	85	shared mobile/module-like element
+F	family_holdout_exact_transfer_audit	duplicated_entry_like	802	802	duplicated-entry-like

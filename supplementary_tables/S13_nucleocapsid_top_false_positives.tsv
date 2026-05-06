@@ -1,0 +1,51 @@
+protein_accession	probability	true_label	predicted_at_threshold	genome_version	virus_family	host_taxid_key	description	cds_product
+YP_010840721.1	0.9993120431900024	0	1	NC_078964.1	Peribunyaviridae	10088	N [Belem virus]	N
+YP_010840775.1	0.9991734623908997	0	1	NC_079014.1	Peribunyaviridae	411517	N [Bobaya virus]	N
+YP_010840678.1	0.9990598559379578	0	1	NC_078925.1	Peribunyaviridae	10036	N [Minatitlan virus]	N
+YP_009362986.1	0.9988621473312378	0	1	NC_034632.1	Peribunyaviridae	1321405	nucleoprotein [Wolkberg virus]	nucleoprotein
+YP_010840665.1	0.9984476566314697	0	1	NC_078913.1	Peribunyaviridae	10088	N [Pacora virus]	N
+YP_010840703.1	0.9982790946960449	0	1	NC_078947.1	Peribunyaviridae	10088	N [Guaratuba virus]	N
+YP_010086207.1	0.9979841709136963	0	1	NC_055408.1	Peribunyaviridae	1629510	nucleoprotein [Caimito virus]	nucleoprotein
+YP_010840713.1	0.9974581599235535	0	1	NC_078957.1	Peribunyaviridae	10090	N [Bertioga virus]	N
+YP_010840910.1	0.9974133372306824	0	1	NC_079118.1	Peribunyaviridae	9534	N protein [Ness Ziona virus]	N protein
+YP_010839478.1	0.9974068999290466	0	1	NC_077869.1	Peribunyaviridae	3120761	nucleoprotein [Chilibre virus]	nucleoprotein
+YP_010840689.1	0.9967663288116455	0	1	NC_078934.1	Peribunyaviridae	10088	N [Ketapang virus]	N
+YP_010840622.1	0.996637225151062	0	1	NC_078877.1	Peribunyaviridae	1158920	nucleoprotein [Balagodu virus]	nucleoprotein
+YP_009330100.1	0.9966310858726501	0	1	NC_032242.1	Riboviria	1	hypothetical protein 1 [Hubei myriapoda virus 7]	hypothetical protein 1
+YP_009337179.1	0.9965073466300964	0	1	NC_033055.1	Xinmoviridae	1	hypothetical protein 1 [Hubei diptera virus 11]	hypothetical protein 1
+YP_009336980.1	0.9964866638183594	0	1	NC_032971.1	Riboviria	1	hypothetical protein 1 [Hubei rhabdo-like virus 1]	hypothetical protein 1
+YP_010839619.1	0.99569171667099	0	1	NC_077982.1	Peribunyaviridae	10090	nucleoprotein [Bruconha virus]	nucleoprotein
+YP_010840727.1	0.9955399632453918	0	1	NC_078969.1	Peribunyaviridae	10090	N [Bakau virus]	N
+YP_010840638.1	0.9954409599304199	0	1	NC_078891.1	Peribunyaviridae	10090	N [Timboteua virus]	N
+YP_009337796.1	0.9944777488708496	0	1	NC_033261.1	Riboviria	1	hypothetical protein 1 [Hubei rhabdo-like virus 2]	hypothetical protein 1
+YP_009337736.1	0.9944469928741455	0	1	NC_033231.1	Riboviria	1	hypothetical protein 1 [Hubei tombus-like virus 6]	hypothetical protein 1
+YP_010840724.1	0.9941366910934448	0	1	NC_078967.1	Peribunyaviridae	10090	N [Batama virus]	N
+YP_010840737.1	0.9938133955001831	0	1	NC_078979.1	Peribunyaviridae	10090	N [Acara virus]	N
+YP_009028568.1	0.9937239289283752	0	1	NC_024075.1	Peribunyaviridae	2912049	nucleoprotein [Cat Que virus]	nucleoprotein
+YP_010797904.1	0.9935780763626099	0	1	NC_076250.1	Orthornavirae	111072	nucleoprotein [Lasius neglectus virus 2]	nucleoprotein
+YP_010840876.1	0.9934936165809631	0	1	NC_079095.1	Fimoviridae	694578	coat protein [Vitis emaravirus]	coat protein
+YP_010840672.1	0.9916841983795166	0	1	NC_078919.1	Peribunyaviridae	10088	N [Nola virus]	N
+YP_009755874.1	0.9915770292282104	0	1	NC_046961.1	Rodepovirinae	260622	hypothetical protein [Chinese broad-headed pond turtle arterivirus]	hypothetical protein
+YP_009337894.1	0.9909144639968872	0	1	NC_033322.1	Riboviria	1	hypothetical protein [Changping earthworm virus 2]	hypothetical protein
+YP_010790480.1	0.9895997047424316	0	1	NC_075439.1	Metaparamyxovirinae	1585515	nucleoprotein [Wenling triplecross lizardfish paramyxovirus]	nucleoprotein
+YP_010085077.1	0.9893207550048828	0	1	NC_055194.1	Peribunyaviridae	228918	nucleoprotein [Trivittatus virus]	nucleoprotein
+NP_982305.1	0.9889320135116577	0	1	NC_005777.1	Peribunyaviridae	9354	nucleoprotein [Oropouche virus]	nucleoprotein
+YP_009268864.1	0.9885486364364624	0	1	NC_030661.1	Fimoviridae	3821	RNA3, partial [Emaravirus toordali]	RNA3
+YP_010840634.1	0.9874094128608704	0	1	NC_078888.1	Peribunyaviridae	10090	N [Turlock virus]	N
+YP_009337008.1	0.9865756630897522	0	1	NC_032982.1	Riboviria	1	putative nucleoprotein [Hubei dimarhabdovirus virus 3]	putative nucleoprotein
+YP_010839547.1	0.9854472875595093	0	1	NC_077925.1	Peribunyaviridae	10090	nucleoprotein [Ananindeua virus]	nucleoprotein
+YP_010840706.1	0.985331654548645	0	1	NC_078950.1	Peribunyaviridae	10088	N [Bushbush virus]	N
+YP_009336609.1	0.9836269617080688	0	1	NC_032789.1	Riboviria	1	hypothetical protein 1 [Hubei tombus-like virus 25]	hypothetical protein 1
+YP_009336502.1	0.9830309152603149	0	1	NC_032735.1	Riboviria	1	hypothetical protein [Hubei tetragnatha maxillosa virus 7]	hypothetical protein
+YP_009362052.1	0.9823221564292908	0	1	NC_034481.1	Peribunyaviridae	62324	nucleoprotein [Nyando virus]	nucleoprotein
+YP_007697632.1	0.9821913838386536	0	1	NC_020899.1	Hexponivirinae	2912049	ORF2b [Alphamesonivirus karangense]	ORF2b
+YP_009337067.1	0.9817599058151245	0	1	NC_033006.1	Riboviria	1	putative nucleoprotein [Hubei dimarhabdovirus virus 2]	putative nucleoprotein
+YP_010839616.1	0.9807696342468262	0	1	NC_077980.1	Peribunyaviridae	10090	N protein [Nepuyo virus]	N protein
+NP_671970.1	0.9804186224937439	0	1	NC_004110.1	Peribunyaviridae	13712	nucleoprotein [La Crosse virus]	nucleoprotein
+YP_010800932.1	0.9793441891670227	0	1	NC_076922.1	Xinmoviridae	494771	nucleoprotein [Hymenopteran anphe-related virus OKIAV71]	nucleoprotein
+YP_009026381.1	0.9789844155311584	0	1	NC_023986.1	Hexponivirinae	569586	ORF 2b [Casuarina virus]	ORF 2b
+YP_009336725.1	0.9783169627189636	0	1	NC_032849.1	Xinmoviridae	1	hypothetical protein 1 [Hubei orthoptera virus 5]	hypothetical protein 1
+YP_010840648.1	0.9778171181678772	0	1	NC_078899.1	Peribunyaviridae	9545	N [Telok Forest virus]	N
+YP_010085092.1	0.9737232327461243	0	1	NC_055206.1	Peribunyaviridae	10036	N protein [Tahyna virus]	N protein
+YP_009342298.1	0.9684309363365173	0	1	NC_033443.1	Riboviria	1	hypothetical protein 1 [Wenzhou tombus-like virus 14]	hypothetical protein 1
+YP_009337074.1	0.9645231366157532	0	1	NC_033008.1	Riboviria	1	hypothetical protein 1 [Changjiang tombus-like virus 10]	hypothetical protein 1

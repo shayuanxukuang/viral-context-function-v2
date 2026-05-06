@@ -43,6 +43,7 @@ python scripts/run_v2_paper_suite.py --help
 python scripts/run_v2_review_completion.py --help
 python scripts/run_v2_breakthrough_validation.py --help
 python scripts/analyze_v2_independent_evidence_enrichment.py --help
+python scripts/build_v2_figure1_overview_framework.py --help
 python scripts/build_v2_figure6_sequence_structure_context.py --help
 ```
 

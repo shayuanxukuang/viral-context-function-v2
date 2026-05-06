@@ -2,7 +2,11 @@
 
 Leakage-aware genome-context modeling for out-of-distribution viral protein function annotation.
 
-This repository contains the public code, manifests, reproduction notes, and supplementary/source tables for the ViruFunc V2 study. The manuscript text and article figures are intentionally not included in this public code repository.
+<p align="center">
+  <img src="docs/virufunc_v2_framework_cover.png" alt="Overview of the leakage-aware ViruFunc V2 framework" width="1000">
+</p>
+
+This repository contains the public code, manifests, reproduction notes, and supplementary/source tables for the ViruFunc V2 study. The manuscript text and article figures are intentionally not included in this public code repository, except for the overview schematic shown above as the repository cover.
 
 The central claim is conservative: genome context complements sequence and structure by prioritizing and sometimes helping disambiguate candidate viral protein functions under leakage-aware OOD evaluation.
 
@@ -26,7 +30,7 @@ Large or regenerable artifacts are intentionally excluded from the Git repositor
 - ESMFold predicted PDB archives;
 - Foldseek databases, including PDB100;
 - local `runs/` directories.
-- manuscript LaTeX source, compiled PDFs, and article figures.
+- manuscript LaTeX source, compiled PDFs, and article figures beyond the README cover schematic.
 
 The 72-target sequence-structure-context panel is included as parsed evidence tables: target metadata, pLDDT summaries, Foldseek hits, ambiguity metrics, case rankings, and Figure 6 source data. Predicted PDB files can be regenerated from the target FASTA and scripts.
 

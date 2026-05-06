@@ -11,7 +11,7 @@ The central claim is conservative: genome context complements sequence and struc
 - `scripts/`: analysis, QC, homology, candidate-prioritization, sequence-structure-context triangulation, and manuscript-asset scripts.
 - `configs/`: public dataset/source configuration.
 - `data_manifest/`: frozen manifests, feature/label manifests, checksums, and compressed split files.
-- `supplementary_tables/`: manuscript supplementary/source tables, including S22/S23/S24 sequence-structure-context outputs.
+- `supplementary_tables/`: manuscript supplementary/source tables, including S22/S23/S24 sequence-structure-context outputs and S25 independent-evidence enrichment outputs.
 - `reproduce/`: stepwise reproduction notes.
 - `docs/`: additional implementation notes.
 
@@ -38,6 +38,7 @@ Run from the repository root after preparing the data paths described in `config
 python scripts/run_v2_paper_suite.py --help
 python scripts/run_v2_review_completion.py --help
 python scripts/run_v2_breakthrough_validation.py --help
+python scripts/analyze_v2_independent_evidence_enrichment.py --help
 ```
 
 For the sequence-structure-context extension:
@@ -58,6 +59,7 @@ bash scripts/run_v2_breakthrough_validation.sh \
 - `S22_*`: validation targets, controls, target homology, integrated evidence, guardrails, and sequence-structure-context report.
 - `S23_*`: Figure 6 case rankings, validation matrix source, Foldseek ambiguity metrics, and top Foldseek hits.
 - `S24_*`: sequence-context landscape extension.
+- `S25_*`: post hoc independent-evidence enrichment comparing high-context-gain candidates with matched controls.
 
 ## License
 

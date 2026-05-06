@@ -1,0 +1,9 @@
+feature	matched_pairs	both_supported	candidate_only	control_only	neither_supported	paired_rate_difference	mcnemar_exact_p
+context_complement_regime	27	5	10	1	11	0.333333	0.011719
+direct_label_support	27	9	1	12	5	-0.407407	0.003418
+foldseek_confident_structural_hit	27	4	1	11	11	-0.37037	0.006348
+foldseek_functionally_informative	27	7	2	12	6	-0.37037	0.012939
+mmseqs_label_agreement	27	5	0	12	10	-0.444444	0.000488
+module_consistent	27	22	2	3	0	-0.037037	1.0
+sequence_structure_resolved	27	9	1	12	5	-0.407407	0.003418
+weak_or_ambiguous_sequence_structure	27	23	1	3	0	-0.074074	0.625

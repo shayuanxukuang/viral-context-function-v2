@@ -1,7 +1,7 @@
 {
   "output_dir": "<LOCAL_WORKSPACE>\\artifacts\\return\\v2_plos_cb_supplementary_package_20260506",
-  "supplementary_table_count": 57,
-  "supplementary_figure_count": 17,
+  "supplementary_table_count": 62,
+  "supplementary_figure_count": 18,
   "tables_zip": "<LOCAL_WORKSPACE>\\artifacts\\return\\v2_plos_cb_supplementary_package_20260506\\supplementary_tables.zip",
   "figures_zip": "<LOCAL_WORKSPACE>\\artifacts\\return\\v2_plos_cb_supplementary_package_20260506\\supplementary_figures.zip",
   "server_sync_source": "<LOCAL_WORKSPACE>\\artifacts\\v2_sequence_structure_validation_server_tables_20260506.tar.gz",
@@ -14,5 +14,21 @@
     "esmfold_predictions": 72,
     "foldseek_pdb100_targets_with_hits": 70,
     "claim_frame": "Genome context complements sequence and structure by prioritizing and sometimes helping disambiguate candidate viral protein functions under leakage-aware OOD evaluation."
+  },
+  "independent_evidence_enrichment": {
+    "candidate_count": 27,
+    "matched_control_count": 27,
+    "optional_sources_supplied": {
+      "phrog_phold_hits": false,
+      "domain_hits": false,
+      "manual_evidence": false
+    },
+    "module_supported_weak_evidence_regime": {
+      "candidate_supported": 15,
+      "control_supported": 6,
+      "fisher_exact_p": 0.024449,
+      "matched_pair_mcnemar_exact_p": 0.011719
+    },
+    "interpretation": "High-context-gain candidates were not enriched for direct sequence/structure label support; they were enriched for module-supported weak-evidence regimes, supporting a complementarity and triage interpretation."
   }
 }

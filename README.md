@@ -3,7 +3,7 @@
 Leakage-aware genome-context modeling for out-of-distribution viral protein function annotation.
 
 <p align="center">
-  <img src="docs/virufunc_v2_framework_cover.png" alt="Overview of the leakage-aware ViruFunc V2 framework" width="1000">
+  <img src="docs/virufunc_v2_poster_cover.png" alt="Overview of the leakage-aware ViruFunc V2 framework" width="1000">
 </p>
 
 This repository contains the public code, manifests, reproduction notes, and supplementary/source tables for the ViruFunc V2 study. The manuscript text and article figures are intentionally not included in this public code repository, except for the overview schematic shown above as the repository cover.

@@ -101,35 +101,35 @@ def draw_panel_a(ax) -> None:
         (
             0.01,
             "Frozen viral data",
-            "713,487 proteins\n19,149 genomes\n1,283 families\n17 labels",
+            "713,487 proteins\n19,149 genomes\n1,283 families; 17 labels",
             "#FBFDFF",
             PALETTE["line"],
         ),
         (
             0.205,
             "Tasks and splits",
-            "protein-only de novo\ngenome-aware de novo\nrefinement separated\nfamily-heldout primary",
+            "protein-only vs genome-aware\nfamily-heldout primary\nrefinement separated",
             "#FBFDFF",
             PALETTE["line"],
         ),
         (
             0.40,
             "Model comparison",
-            "protein-only pLM\ngenome-aware pLM\nfamily macro +; CI crosses 0\nhost-heldout supportive",
+            "frozen pLM baseline\ngenome-aware pLM\nmacro delta > 0; CI includes 0",
             "#EEF8EE",
             PALETTE["context"],
         ),
         (
             0.595,
             "Interpretation",
-            "feature audit PASS\nlocal+genome > host-only\nlabel-specific signal\nstrongest: nucleocapsid",
+            "feature audit PASS\nlocal+genome > host-only\nlabel-specific signal",
             "#FBFDFF",
             PALETTE["line"],
         ),
         (
             0.79,
             "Candidate triage",
-            "validation-targeted gate\n72-target panel\nMMseqs2 / ESMFold / Foldseek\nmodule-supported weak evidence",
+            "validation-targeted gate\n72-target panel\nmodule-supported weak evidence",
             "#FFF8D9",
             PALETTE["yellow"],
         ),
@@ -147,21 +147,12 @@ def draw_panel_a(ax) -> None:
         )
 
     ax.text(
-        0.212,
-        0.17,
-        "Default split optimistic: exact transfer 27.4% -> 1.37%; NN macro AP 0.369 -> 0.048",
-        transform=ax.transAxes,
-        fontsize=7.2,
-        color=PALETTE["risk"],
-        fontweight="bold",
-    )
-    ax.text(
         0.5,
-        0.045,
-        "Genome context does not replace sequence or structure;\nit prioritizes candidates in weak, ambiguous, or incomplete evidence regimes.",
+        0.095,
+        "Genome context complements sequence and structure in weak, ambiguous, or incomplete evidence regimes.",
         transform=ax.transAxes,
         ha="center",
-        fontsize=7.7,
+        fontsize=8.3,
         color="#1F6F35",
         fontweight="bold",
     )
@@ -178,7 +169,7 @@ def draw_panel_b(ax) -> None:
         0.42,
         0.68,
         "Allowed in de novo",
-        bullet_lines(["target embedding", "neighbor embeddings", "gene order / strand", "gaps, overlaps, segments"], 22),
+        bullet_lines(["target pLM embedding", "neighbor pLM embeddings", "non-text genome topology", "strand / gaps / overlaps / segments"], 25),
         fc="#EEF5FC",
         ec=PALETTE["protein"],
         title_size=7.3,
@@ -235,7 +226,7 @@ def draw_strict_zero(ax, rows: list[dict[str, str]]) -> None:
     ax.bar([label for _, label in metrics], vals, color=PALETTE["context"], width=0.62)
     ax.axhline(0, color="#404040", linewidth=0.8)
     panel_label(ax, "E", "Strict-zero exact-transfer sensitivity")
-    ax.set_ylabel("context - protein-only", fontsize=9)
+    ax.set_ylabel("Delta metric\n(genome-aware - protein-only)", fontsize=8.5)
     ax.set_ylim(0, max(vals) * 1.45)
     ax.grid(axis="y", color="#E5E7EB", linewidth=0.8)
     ax.set_axisbelow(True)
@@ -270,9 +261,9 @@ def draw_residual_audit(ax, rows: list[dict[str, str]]) -> None:
 
 def save_figure(fig, out_prefix: Path) -> None:
     out_prefix.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(out_prefix.with_suffix(".png"), dpi=300, bbox_inches="tight")
-    fig.savefig(out_prefix.with_suffix(".pdf"), bbox_inches="tight")
-    fig.savefig(out_prefix.with_suffix(".svg"), bbox_inches="tight")
+    fig.savefig(out_prefix.with_suffix(".png"), dpi=300, bbox_inches="tight", pad_inches=0.25)
+    fig.savefig(out_prefix.with_suffix(".pdf"), bbox_inches="tight", pad_inches=0.25)
+    fig.savefig(out_prefix.with_suffix(".svg"), bbox_inches="tight", pad_inches=0.25)
 
 
 def build_cover(out_path: Path) -> None:
@@ -324,6 +315,7 @@ def main() -> int:
 
     plt.rcParams.update({"font.family": "DejaVu Sans", "svg.fonttype": "none"})
     fig = plt.figure(figsize=(13.2, 8.2))
+    fig.subplots_adjust(left=0.085, right=0.985, top=0.965, bottom=0.075)
     gs = GridSpec(3, 3, figure=fig, height_ratios=[0.88, 1.0, 1.02], hspace=0.36, wspace=0.36)
 
     draw_panel_a(fig.add_subplot(gs[0, :]))

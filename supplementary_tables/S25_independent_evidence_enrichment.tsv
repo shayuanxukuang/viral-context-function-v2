@@ -1,17 +1,17 @@
-feature	evidence_axis	source_available	candidate_supported	candidate_total	candidate_rate	control_supported	control_total	control_rate	rate_difference_candidate_minus_control	rate_ratio	haldane_odds_ratio	fisher_exact_p	note
-sequence_any_mmseqs_hit	MMseqs2 any train/reference hit	1	16	27	0.592593	19	27	0.703704	-0.111111	0.842105	0.625418	0.569405	
-mmseqs_remote_hit	MMseqs2 remote/low-identity hit	1	13	27	0.481481	14	27	0.518519	-0.037037	0.928571	0.866825	1.0	
-mmseqs_label_agreement	MMseqs2 top-hit label agreement	1	5	27	0.185185	17	27	0.62963	-0.444444	0.294118	0.146667	0.001973	
-phrog_phold_any_hit	PHROG/Phold any hit	0											optional evidence source not supplied
-phrog_phold_label_agreement	PHROG/Phold label agreement	0											optional evidence source not supplied
-domain_hmm_any_hit	InterPro/Pfam/HMM any hit	0											optional evidence source not supplied
-domain_hmm_label_agreement	InterPro/Pfam/HMM label agreement	0											optional evidence source not supplied
-foldseek_confident_structural_hit	Foldseek confident structural hit	1	5	27	0.185185	15	27	0.555556	-0.37037	0.333333	0.197133	0.010321	
-foldseek_functionally_informative	Foldseek functionally informative class	1	9	27	0.333333	19	27	0.703704	-0.37037	0.473684	0.223839	0.013492	
-module_consistent	Module neighborhood consistency	1	24	27	0.888889	25	27	0.925926	-0.037037	0.96	0.686275	1.0	
-manual_literature_supported	Manual literature-supported example	0											optional evidence source not supplied
-direct_label_support	Direct label support	1	10	27	0.37037	21	27	0.777778	-0.407407	0.47619	0.181395	0.005373	
-any_independent_support	Any independent/post hoc support	1	26	27	0.962963	27	27	1.0	-0.037037	0.962963	0.321212	1.0	
-sequence_structure_resolved	Sequence/structure-resolved evidence	1	10	27	0.37037	21	27	0.777778	-0.407407	0.47619	0.181395	0.005373	
-weak_or_ambiguous_sequence_structure	Weak/ambiguous sequence-structure regime	1	24	27	0.888889	26	27	0.962963	-0.074074	0.923077	0.396226	0.610433	
-context_complement_regime	Module-supported weak-evidence regime	1	15	27	0.555556	6	27	0.222222	0.333333	2.5	4.101538	0.024449	
+feature	evidence_axis	source_available	candidate_supported	candidate_total	candidate_rate	control_supported	control_total	control_rate	rate_difference_candidate_minus_control	rate_ratio	raw_odds_ratio	raw_odds_ratio_woolf_95ci_low	raw_odds_ratio_woolf_95ci_high	haldane_odds_ratio	fisher_exact_p	note
+sequence_any_mmseqs_hit	MMseqs2 any train/reference hit	1	16	27	0.592593	19	27	0.703704	-0.111111	0.842105	0.61244	0.198292	1.891564	0.625418	0.569405	
+mmseqs_remote_hit	MMseqs2 remote/low-identity hit	1	13	27	0.481481	14	27	0.518519	-0.037037	0.928571	0.862245	0.296462	2.507799	0.866825	1.0	
+mmseqs_label_agreement	MMseqs2 top-hit label agreement	1	5	27	0.185185	17	27	0.62963	-0.444444	0.294118	0.13369	0.038448	0.464865	0.146667	0.001973	
+phrog_phold_any_hit	PHROG/Phold any hit	0														optional evidence source not supplied
+phrog_phold_label_agreement	PHROG/Phold label agreement	0														optional evidence source not supplied
+domain_hmm_any_hit	InterPro/Pfam/HMM any hit	0														optional evidence source not supplied
+domain_hmm_label_agreement	InterPro/Pfam/HMM label agreement	0														optional evidence source not supplied
+foldseek_confident_structural_hit	Foldseek confident structural hit	1	5	27	0.185185	15	27	0.555556	-0.37037	0.333333	0.181818	0.053009	0.62363	0.197133	0.010321	
+foldseek_functionally_informative	Foldseek functionally informative class	1	9	27	0.333333	19	27	0.703704	-0.37037	0.473684	0.210526	0.066656	0.664928	0.223839	0.013492	
+module_consistent	Module neighborhood consistency	1	24	27	0.888889	25	27	0.925926	-0.037037	0.96	0.64	0.098162	4.1727	0.686275	1.0	
+manual_literature_supported	Manual literature-supported example	0														optional evidence source not supplied
+direct_label_support	Direct label support	1	10	27	0.37037	21	27	0.777778	-0.407407	0.47619	0.168067	0.050762	0.556454	0.181395	0.005373	
+any_independent_support	Any independent/post hoc support	1	26	27	0.962963	27	27	1.0	-0.037037	0.962963				0.321212	1.0	
+sequence_structure_resolved	Sequence/structure-resolved evidence	1	10	27	0.37037	21	27	0.777778	-0.407407	0.47619	0.168067	0.050762	0.556454	0.181395	0.005373	
+weak_or_ambiguous_sequence_structure	Weak/ambiguous sequence-structure regime	1	24	27	0.888889	26	27	0.962963	-0.074074	0.923077	0.307692	0.02993	3.163159	0.396226	0.610433	
+context_complement_regime	Module-supported weak-evidence regime	1	15	27	0.555556	6	27	0.222222	0.333333	2.5	4.375	1.340345	14.280369	4.101538	0.024449	

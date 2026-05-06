@@ -349,10 +349,9 @@ def make_flag_rows(
                 phrog_agree,
                 domain_agree,
                 manual_supported,
-                foldseek_confident_hit,
+                foldseek_confident_hit and foldseek_functionally_informative,
             ]
         )
-        context_complement_regime = module_consistent and not sequence_structure_resolved
         weak_or_ambiguous_sequence_structure = not sequence_structure_resolved or structure_status in {
             "structure_consistent_but_ambiguous",
             "ambiguous_or_weak_structure_signal",
@@ -361,6 +360,7 @@ def make_flag_rows(
             "no_foldseek_hit_available",
             "weak_or_inconclusive",
         }
+        context_complement_regime = module_consistent and not sequence_structure_resolved
 
         out.append(
             {
@@ -448,6 +448,9 @@ def summarize_flags(
                     "control_rate": "",
                     "rate_difference_candidate_minus_control": "",
                     "rate_ratio": "",
+                    "raw_odds_ratio": "",
+                    "raw_odds_ratio_woolf_95ci_low": "",
+                    "raw_odds_ratio_woolf_95ci_high": "",
                     "haldane_odds_ratio": "",
                     "fisher_exact_p": "",
                     "note": "optional evidence source not supplied",
@@ -465,6 +468,16 @@ def summarize_flags(
         diff = cand_rate - ctrl_rate
         rr = (cand_rate / ctrl_rate) if ctrl_rate > 0 else math.inf
         odds_ratio = ((cand_pos + 0.5) * (ctrl_neg + 0.5)) / ((cand_neg + 0.5) * (ctrl_pos + 0.5))
+        if min(cand_pos, cand_neg, ctrl_pos, ctrl_neg) > 0:
+            raw_or = (cand_pos * ctrl_neg) / (cand_neg * ctrl_pos)
+            log_or = math.log(raw_or)
+            se_log_or = math.sqrt(1 / cand_pos + 1 / cand_neg + 1 / ctrl_pos + 1 / ctrl_neg)
+            raw_or_low = math.exp(log_or - 1.96 * se_log_or)
+            raw_or_high = math.exp(log_or + 1.96 * se_log_or)
+        else:
+            raw_or = math.inf if cand_pos and ctrl_neg else math.nan
+            raw_or_low = math.nan
+            raw_or_high = math.nan
         fisher_p = fisher_two_sided(cand_pos, cand_neg, ctrl_pos, ctrl_neg)
         out.append(
             {
@@ -479,6 +492,9 @@ def summarize_flags(
                 "control_rate": round(ctrl_rate, 6),
                 "rate_difference_candidate_minus_control": round(diff, 6),
                 "rate_ratio": "inf" if math.isinf(rr) else round(rr, 6),
+                "raw_odds_ratio": "inf" if math.isinf(raw_or) else ("" if math.isnan(raw_or) else round(raw_or, 6)),
+                "raw_odds_ratio_woolf_95ci_low": "" if math.isnan(raw_or_low) else round(raw_or_low, 6),
+                "raw_odds_ratio_woolf_95ci_high": "" if math.isnan(raw_or_high) else round(raw_or_high, 6),
                 "haldane_odds_ratio": round(odds_ratio, 6),
                 "fisher_exact_p": "" if math.isnan(fisher_p) else round(fisher_p, 6),
                 "note": "",
@@ -657,6 +673,11 @@ def main() -> int:
     pair_summary = summarize_pairs(pairs)
     make_figures(summary, out_dir)
 
+    summary_by_feature = {row.get("feature"): row for row in summary}
+    paired_by_feature = {row.get("feature"): row for row in pair_summary}
+    complement = summary_by_feature.get("context_complement_regime", {})
+    complement_paired = paired_by_feature.get("context_complement_regime", {})
+
     tables_dir = out_dir / "tables"
     write_tsv(tables_dir / "independent_evidence_flags.tsv", flags)
     write_tsv(tables_dir / "independent_evidence_enrichment.tsv", summary)
@@ -685,6 +706,24 @@ def main() -> int:
             "foldseek_qtm_min": args.foldseek_qtm_min,
             "foldseek_coverage_min": args.foldseek_coverage_min,
             "plddt_min": args.plddt_min,
+        },
+        "fixed_regime_definition": {
+            "sequence_structure_resolved": "MMseqs2 label agreement or confident, functionally informative Foldseek support; optional PHROG/Phold, domain/HMM, or manual evidence can be included when supplied.",
+            "module_supported_weak_evidence": "module-consistent target without sequence/structure-resolved label support; applied identically to high-context candidates and matched controls.",
+            "primary_test": "matched-pair McNemar exact test",
+            "supplementary_test": "Fisher exact test",
+        },
+        "key_result": {
+            "feature": "context_complement_regime",
+            "candidate_supported": complement.get("candidate_supported", ""),
+            "candidate_total": complement.get("candidate_total", ""),
+            "control_supported": complement.get("control_supported", ""),
+            "control_total": complement.get("control_total", ""),
+            "raw_odds_ratio": complement.get("raw_odds_ratio", ""),
+            "raw_odds_ratio_woolf_95ci_low": complement.get("raw_odds_ratio_woolf_95ci_low", ""),
+            "raw_odds_ratio_woolf_95ci_high": complement.get("raw_odds_ratio_woolf_95ci_high", ""),
+            "mcnemar_exact_p": complement_paired.get("mcnemar_exact_p", ""),
+            "fisher_exact_p": complement.get("fisher_exact_p", ""),
         },
         "outputs": {
             "flags": str(tables_dir / "independent_evidence_flags.tsv"),

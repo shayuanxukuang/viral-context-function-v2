@@ -26,6 +26,11 @@
     "module_supported_weak_evidence_regime": {
       "candidate_supported": 15,
       "control_supported": 6,
+      "raw_odds_ratio": 4.375,
+      "raw_odds_ratio_woolf_95ci": [
+        1.340345,
+        14.280369
+      ],
       "fisher_exact_p": 0.024449,
       "matched_pair_mcnemar_exact_p": 0.011719
     },

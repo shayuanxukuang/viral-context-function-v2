@@ -21,6 +21,24 @@
     "foldseek_coverage_min": 0.35,
     "plddt_min": 70.0
   },
+  "fixed_regime_definition": {
+    "sequence_structure_resolved": "MMseqs2 label agreement or confident, functionally informative Foldseek support; optional PHROG/Phold, domain/HMM, or manual evidence can be included when supplied.",
+    "module_supported_weak_evidence": "module-consistent target without sequence/structure-resolved label support; applied identically to high-context candidates and matched controls.",
+    "primary_test": "matched-pair McNemar exact test",
+    "supplementary_test": "Fisher exact test"
+  },
+  "key_result": {
+    "feature": "context_complement_regime",
+    "candidate_supported": 15,
+    "candidate_total": 27,
+    "control_supported": 6,
+    "control_total": 27,
+    "raw_odds_ratio": 4.375,
+    "raw_odds_ratio_woolf_95ci_low": 1.340345,
+    "raw_odds_ratio_woolf_95ci_high": 14.280369,
+    "mcnemar_exact_p": 0.011719,
+    "fisher_exact_p": 0.024449
+  },
   "outputs": {
     "flags": "G:\\virufunc\\runs\\v2_independent_evidence_enrichment\\tables\\independent_evidence_flags.tsv",
     "enrichment": "G:\\virufunc\\runs\\v2_independent_evidence_enrichment\\tables\\independent_evidence_enrichment.tsv",

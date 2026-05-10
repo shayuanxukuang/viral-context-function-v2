@@ -1,0 +1,7 @@
+structure_evidence_tier	count_completed_subset	fraction_completed_subset	interpretation
+strong_targeted_support	1086	0.486777	high pLDDT with confident Foldseek/PDB100-compatible structural support
+foldseek_only_low_model_confidence	301	0.134917	Foldseek hit present but ESMFold model confidence limits interpretation
+weak_or_inconclusive	293	0.131331	weak or inconclusive structure evidence
+local_structural_support	269	0.120574	moderate model confidence with strong local Foldseek support
+model_confident_no_clear_pdb_analog	198	0.088749	confident predicted model but no clear PDB100 analog under the selected rule
+no_foldseek_hit_available	84	0.037651	completed structure without parsed Foldseek hit; not a true structure orphan claim

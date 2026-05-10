@@ -1,0 +1,8 @@
+{
+  "cluster_manifest": "runs\\review_additional_20260509_extracted\\data\\processed\\sequence_cluster_splits\\viral_protein_sequence_cluster_splits.tsv.gz",
+  "protein_index": "data\\processed\\training\\viral_protein_training_index.tsv.gz",
+  "prediction_cache_root": "runs\\review_additional_20260509_extracted\\runs\\v2_nohost_primary_cluster_multiseed\\multiseed_summary\\_prediction_by_seed",
+  "output_summary": "runs\\v2_sequence_cluster_split_diagnostics\\sequence_cluster_split_diagnostics.tsv",
+  "output_label_support": "runs\\v2_sequence_cluster_split_diagnostics\\sequence_cluster_split_label_support.tsv",
+  "claim_frame": "Sequence-cluster holdouts control sequence relatedness but retain family/host overlap; they are supportive sensitivity analyses, not replacements for family-heldout OOD evaluation."
+}

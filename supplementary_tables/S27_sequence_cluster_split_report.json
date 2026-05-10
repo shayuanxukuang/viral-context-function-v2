@@ -1,0 +1,119 @@
+﻿{
+  "base_manifest": "data/processed/splits/viral_protein_strict_splits.tsv.gz",
+  "output_manifest": "data/processed/sequence_cluster_splits/viral_protein_sequence_cluster_splits.tsv.gz",
+  "thresholds": [
+    30,
+    50,
+    70
+  ],
+  "row_count": 713487,
+  "threshold_reports": {
+    "30": {
+      "train": 571328,
+      "val": 70781,
+      "test": 71378,
+      "clustered": 713487,
+      "singleton": 0,
+      "cluster_count": 167052
+    },
+    "50": {
+      "train": 566878,
+      "val": 73343,
+      "test": 73266,
+      "clustered": 713487,
+      "singleton": 0,
+      "cluster_count": 221852
+    },
+    "70": {
+      "train": 572073,
+      "val": 71544,
+      "test": 69870,
+      "clustered": 713487,
+      "singleton": 0,
+      "cluster_count": 283158
+    }
+  },
+  "created_at": "2026-05-07T05:10:54.505277+00:00",
+  "protein_index": "data/processed/training/viral_protein_training_index.tsv.gz",
+  "fasta": "data/processed/sequence_cluster_splits/all_proteins_for_mmseqs_cluster.faa",
+  "fasta_sequence_count": 713487,
+  "cluster_tsv": {
+    "30": "data/processed/sequence_cluster_splits/mmseqs_cluster_30_cluster.tsv",
+    "50": "data/processed/sequence_cluster_splits/mmseqs_cluster_50_cluster.tsv",
+    "70": "data/processed/sequence_cluster_splits/mmseqs_cluster_70_cluster.tsv"
+  },
+  "commands": [
+    {
+      "threshold": 30,
+      "cluster_tsv": "data/processed/sequence_cluster_splits/mmseqs_cluster_30_cluster.tsv",
+      "command": [
+        "<PROMATH_TORCH_ENV>/bin/mmseqs",
+        "easy-cluster",
+        "data/processed/sequence_cluster_splits/all_proteins_for_mmseqs_cluster.faa",
+        "data/processed/sequence_cluster_splits/mmseqs_cluster_30",
+        "data/processed/sequence_cluster_splits/mmseqs_tmp_30",
+        "--min-seq-id",
+        "0.3000",
+        "-c",
+        "0.8",
+        "--cov-mode",
+        "0",
+        "-s",
+        "7.5",
+        "--threads",
+        "32"
+      ]
+    },
+    {
+      "threshold": 50,
+      "cluster_tsv": "data/processed/sequence_cluster_splits/mmseqs_cluster_50_cluster.tsv",
+      "command": [
+        "<PROMATH_TORCH_ENV>/bin/mmseqs",
+        "easy-cluster",
+        "data/processed/sequence_cluster_splits/all_proteins_for_mmseqs_cluster.faa",
+        "data/processed/sequence_cluster_splits/mmseqs_cluster_50",
+        "data/processed/sequence_cluster_splits/mmseqs_tmp_50",
+        "--min-seq-id",
+        "0.5000",
+        "-c",
+        "0.8",
+        "--cov-mode",
+        "0",
+        "-s",
+        "7.5",
+        "--threads",
+        "32"
+      ]
+    },
+    {
+      "threshold": 70,
+      "cluster_tsv": "data/processed/sequence_cluster_splits/mmseqs_cluster_70_cluster.tsv",
+      "command": [
+        "<PROMATH_TORCH_ENV>/bin/mmseqs",
+        "easy-cluster",
+        "data/processed/sequence_cluster_splits/all_proteins_for_mmseqs_cluster.faa",
+        "data/processed/sequence_cluster_splits/mmseqs_cluster_70",
+        "data/processed/sequence_cluster_splits/mmseqs_tmp_70",
+        "--min-seq-id",
+        "0.7000",
+        "-c",
+        "0.8",
+        "--cov-mode",
+        "0",
+        "-s",
+        "7.5",
+        "--threads",
+        "32"
+      ]
+    }
+  ],
+  "mmseqs_thresholds": [
+    30,
+    50,
+    70
+  ],
+  "mmseqs_min_coverage": 0.8,
+  "mmseqs_cov_mode": "0",
+  "seed": 42,
+  "fasta_removed": true
+}

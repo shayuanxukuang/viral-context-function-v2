@@ -633,7 +633,8 @@ def build_integrated_rows(
             "prioritized computational hypothesis; evidence is post hoc and requires independent experimental validation"
         )
         row["guardrail_note"] = (
-            "Genome context complements sequence and structure; do not claim confirmed discovery or genome-context superiority."
+            "Genome context provides post hoc candidate-prioritization signal; do not claim confirmed discovery "
+            "or genome-context superiority."
         )
         rows.append(row)
     add_recommendations(rows)
@@ -645,8 +646,8 @@ def write_guardrails(path: Path) -> None:
         {
             "item": "main_claim",
             "manuscript_safe_wording": (
-                "Genome context complements sequence and structure by prioritizing and sometimes disambiguating "
-                "candidate viral protein functions under leakage-aware OOD evaluation."
+                "Genome context provides label-specific candidate-prioritization signal when conventional "
+                "sequence or structure evidence is weak, ambiguous, or incomplete under leakage-aware OOD evaluation."
             ),
         },
         {
@@ -896,8 +897,8 @@ def main() -> int:
 
     report = {
         "claim_frame": (
-            "Genome context complements sequence and structure by prioritizing and sometimes disambiguating "
-            "candidate viral protein functions under leakage-aware OOD evaluation."
+            "Genome context provides label-specific candidate-prioritization signal when conventional "
+            "sequence or structure evidence is weak, ambiguous, or incomplete under leakage-aware OOD evaluation."
         ),
         "target_count": len(integrated),
         "candidate_count": len(candidate_rankings),

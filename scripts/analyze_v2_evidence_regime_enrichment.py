@@ -331,7 +331,7 @@ def make_flag_rows(
                 foldseek_confident_hit and foldseek_functionally_informative,
             ]
         )
-        any_independent_support = any(
+        any_posthoc_support = any(
             [
                 mmseqs_remote_hit,
                 mmseqs_label_agreement,
@@ -387,7 +387,7 @@ def make_flag_rows(
                 "module_consistent": int(module_consistent),
                 "manual_literature_supported": int(manual_supported),
                 "direct_label_support": int(direct_label_support),
-                "any_independent_support": int(any_independent_support),
+                "any_posthoc_support": int(any_posthoc_support),
                 "sequence_structure_resolved": int(sequence_structure_resolved),
                 "weak_or_ambiguous_sequence_structure": int(weak_or_ambiguous_sequence_structure),
                 "context_complement_regime": int(context_complement_regime),
@@ -418,10 +418,10 @@ def summarize_flags(
         ("module_consistent", "Module neighborhood consistency"),
         ("manual_literature_supported", "Manual literature-supported example"),
         ("direct_label_support", "Direct label support"),
-        ("any_independent_support", "Any independent/post hoc support"),
+        ("any_posthoc_support", "Any post hoc support"),
         ("sequence_structure_resolved", "Sequence/structure-resolved evidence"),
         ("weak_or_ambiguous_sequence_structure", "Weak/ambiguous sequence-structure regime"),
-        ("context_complement_regime", "Module-supported weak-evidence regime"),
+        ("context_complement_regime", "Auxiliary module-coherent unresolved regime"),
     ]
     candidates = [row for row in flag_rows if row["target_type"] == candidate_type]
     controls = [row for row in flag_rows if row["target_type"] == control_type]
@@ -609,7 +609,7 @@ def make_figures(summary: list[dict[str, Any]], out_dir: Path) -> None:
     ax.set_yticks(y, labels)
     ax.set_xlim(0, 1.12)
     ax.set_xlabel("Support rate")
-    ax.set_title("Independent evidence support: candidates vs matched controls", loc="left", fontsize=10, fontweight="bold")
+    ax.set_title("Evidence-regime support: candidates vs matched controls", loc="left", fontsize=10, fontweight="bold")
     ax.grid(axis="x", color="#D8DEE9", linewidth=0.6, alpha=0.8)
     ax.text(
         0.98,
@@ -626,8 +626,8 @@ def make_figures(summary: list[dict[str, Any]], out_dir: Path) -> None:
         ax.text(cand[idx] + 0.015, idx + 0.18, f"{int(row['candidate_supported'])}/{int(row['candidate_total'])}", va="center", fontsize=7)
         ax.text(ctrl[idx] + 0.015, idx - 0.18, f"{int(row['control_supported'])}/{int(row['control_total'])}", va="center", fontsize=7)
     fig.tight_layout()
-    fig.savefig(fig_dir / "independent_evidence_support_rates.png", dpi=240, bbox_inches="tight")
-    fig.savefig(fig_dir / "independent_evidence_support_rates.pdf", bbox_inches="tight")
+    fig.savefig(fig_dir / "evidence_regime_support_rates.png", dpi=240, bbox_inches="tight")
+    fig.savefig(fig_dir / "evidence_regime_support_rates.pdf", bbox_inches="tight")
     plt.close(fig)
 
 
@@ -679,10 +679,10 @@ def main() -> int:
     complement_paired = paired_by_feature.get("context_complement_regime", {})
 
     tables_dir = out_dir / "tables"
-    write_tsv(tables_dir / "independent_evidence_flags.tsv", flags)
-    write_tsv(tables_dir / "independent_evidence_enrichment.tsv", summary)
-    write_tsv(tables_dir / "independent_evidence_matched_pairs.tsv", pairs)
-    write_tsv(tables_dir / "independent_evidence_paired_summary.tsv", pair_summary)
+    write_tsv(tables_dir / "evidence_regime_flags.tsv", flags)
+    write_tsv(tables_dir / "evidence_regime_enrichment.tsv", summary)
+    write_tsv(tables_dir / "evidence_regime_matched_pairs.tsv", pairs)
+    write_tsv(tables_dir / "evidence_regime_paired_summary.tsv", pair_summary)
 
     report = {
         "claim_frame": "Post hoc independent-evidence enrichment for candidate triage; evidence sources are not de novo model inputs.",
@@ -708,8 +708,8 @@ def main() -> int:
             "plddt_min": args.plddt_min,
         },
         "fixed_regime_definition": {
-            "sequence_structure_resolved": "MMseqs2 label agreement or confident, functionally informative Foldseek support; optional PHROG/Phold, domain/HMM, or manual evidence can be included when supplied.",
-            "module_supported_weak_evidence": "module-consistent target without sequence/structure-resolved label support; applied identically to high-context candidates and matched controls.",
+            "sequence_structure_resolved": "MMseqs2 label agreement or confident, functionally informative Foldseek support; optional PHROG/Phold, domain/HMM, or manual evidence was not supplied in the returned primary rule.",
+            "auxiliary_module_coherent_unresolved": "module-consistent target without sequence/structure-resolved label support; applied identically to high-context candidates and matched controls.",
             "primary_test": "matched-pair McNemar exact test",
             "supplementary_test": "Fisher exact test",
         },
@@ -726,15 +726,15 @@ def main() -> int:
             "fisher_exact_p": complement.get("fisher_exact_p", ""),
         },
         "outputs": {
-            "flags": str(tables_dir / "independent_evidence_flags.tsv"),
-            "enrichment": str(tables_dir / "independent_evidence_enrichment.tsv"),
-            "matched_pairs": str(tables_dir / "independent_evidence_matched_pairs.tsv"),
-            "paired_summary": str(tables_dir / "independent_evidence_paired_summary.tsv"),
+            "flags": str(tables_dir / "evidence_regime_flags.tsv"),
+            "enrichment": str(tables_dir / "evidence_regime_enrichment.tsv"),
+            "matched_pairs": str(tables_dir / "evidence_regime_matched_pairs.tsv"),
+            "paired_summary": str(tables_dir / "evidence_regime_paired_summary.tsv"),
             "figures": str(out_dir / "figures"),
         },
-        "interpretation_guardrail": "A lower direct sequence/structure support rate in high-context candidates is compatible with the paper's complementarity claim when these candidates are enriched for module-supported weak-evidence regimes.",
+        "interpretation_guardrail": "A lower direct sequence/structure support rate in high-context candidates is compatible with the paper's complementarity claim when these candidates are enriched for an auxiliary module-coherent unresolved regime. This is evidence-regime enrichment, not independent validation.",
     }
-    (out_dir / "independent_evidence_enrichment_report.json").write_text(
+    (out_dir / "evidence_regime_enrichment_report.json").write_text(
         json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8"
     )
     print(json.dumps(report, indent=2, ensure_ascii=False))

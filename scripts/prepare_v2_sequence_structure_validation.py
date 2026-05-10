@@ -640,8 +640,8 @@ def main() -> int:
 
     report = {
         "claim_frame": (
-            "Genome context complements sequence and structure by prioritizing and sometimes disambiguating "
-            "candidate viral protein functions under leakage-aware OOD evaluation."
+            "Genome context provides label-specific candidate-prioritization signal when conventional "
+            "sequence or structure evidence is weak, ambiguous, or incomplete under leakage-aware OOD evaluation."
         ),
         "candidates": str(candidates_path),
         "candidate_count": len(candidates),

@@ -1,0 +1,6 @@
+baseline	coverage_subset	test_proteins	covered_by_top_hit	coverage	macro_ap	micro_ap	macro_f1	micro_f1	notes
+MMseqs2_top_hit_label_transfer	family_holdout:all_test	66837	46155	0.690561	0.594389	0.683399	0.661425	0.785193	classical sequence homology top-hit label transfer from S21; F1 is homology-score Fmax, not validation-selected neural threshold
+protein_only_pLM_seed42	family_holdout:all_loaded_test	66837			0.695347	0.759841	0.658628	0.713032	frozen ESM-2 protein-only baseline; seed 42 model row for baseline positioning
+genome_aware_nohost_local_genome_seed42	family_holdout:all_loaded_test	66837			0.705154	0.762403	0.673186	0.713603	clean de novo local+genome model without host metadata; seed 42 model row for baseline positioning
+MMseqs2_binary_mapped_model_subset	family_holdout:all_loaded_test	66837		0.218173	0.518089	0.599749	0.668907	0.770400	binary mapped top-hit labels on same test subset; pident>=30 and bits>=50
+protein_pLM_plus_MMseqs2_posthoc_ensemble	family_holdout:all_loaded_test	66837		0.218173	0.729382	0.824735	0.664056	0.765064	post hoc score ensemble for positioning; MMseqs2 is not a de novo model input

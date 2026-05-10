@@ -425,8 +425,8 @@ def main() -> int:
         "evidence": str(evidence_dir / "sequence_structure_context_validation_report.json"),
         "landscape": str(landscape_dir / "sequence_context_landscape_report.json") if not args.skip_landscape else "",
         "claim_frame": (
-            "Genome context complements sequence and structure by prioritizing and sometimes disambiguating "
-            "candidate viral protein functions under leakage-aware OOD evaluation."
+            "Genome context provides label-specific candidate-prioritization signal when conventional "
+            "sequence or structure evidence is weak, ambiguous, or incomplete under leakage-aware OOD evaluation."
         ),
     }
     (out_root / "breakthrough_validation_manifest.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")

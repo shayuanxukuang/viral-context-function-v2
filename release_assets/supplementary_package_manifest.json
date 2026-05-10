@@ -1,10 +1,10 @@
-{
-  "output_dir": "<LOCAL_WORKSPACE>\\artifacts\\return\\v2_plos_cb_supplementary_package_20260506",
-  "supplementary_table_count": 62,
+﻿{
+  "output_dir": "supplementary_package",
+  "supplementary_table_count": 73,
   "supplementary_figure_count": 18,
-  "tables_zip": "<LOCAL_WORKSPACE>\\artifacts\\return\\v2_plos_cb_supplementary_package_20260506\\supplementary_tables.zip",
-  "figures_zip": "<LOCAL_WORKSPACE>\\artifacts\\return\\v2_plos_cb_supplementary_package_20260506\\supplementary_figures.zip",
-  "server_sync_source": "<LOCAL_WORKSPACE>\\artifacts\\v2_sequence_structure_validation_server_tables_20260506.tar.gz",
+  "tables_zip": "supplementary_package\\supplementary_tables.zip",
+  "figures_zip": "supplementary_package\\supplementary_figures.zip",
+  "server_sync_source": "server_sync_source_redacted.tar.gz",
   "sequence_structure_context_extension": {
     "target_count": 72,
     "high_context_candidate_count": 27,
@@ -13,9 +13,26 @@
     "mmseqs2_targets_with_hits": 53,
     "esmfold_predictions": 72,
     "foldseek_pdb100_targets_with_hits": 70,
-    "claim_frame": "Genome context complements sequence and structure by prioritizing and sometimes helping disambiguate candidate viral protein functions under leakage-aware OOD evaluation."
+    "claim_frame": "Genome context provides label-specific candidate-prioritization signal when conventional sequence or structure evidence is weak, ambiguous, or incomplete under leakage-aware OOD evaluation."
   },
-  "independent_evidence_enrichment": {
+  "review_additional_experiments_20260509": {
+    "nohost_primary_multiseed": "S26_nohost_primary_multiseed_block_bootstrap.tsv",
+    "sequence_cluster_holdout": "S27_sequence_cluster_nohost_multiseed_block_bootstrap.tsv",
+    "sequence_cluster_split_report": "S27_sequence_cluster_split_report.json",
+    "main_baseline_positioning": "S28_main_baseline_comparison_table.tsv",
+    "claim_frame": "No-host local+genome is the primary clean de novo genome-context model; host metadata is secondary/audited."
+  },
+  "partial_stratified_structure_panel_20260509": {
+    "panel_total_targets": 2277,
+    "esmfold_completed": 2231,
+    "esmfold_missing_or_failed": 46,
+    "foldseek_queries_with_hits": 2147,
+    "tier_summary": "S29_partial_structure_panel_tier_summary.tsv",
+    "completion_status": "S29_partial_structure_panel_esmfold_completion_status.tsv",
+    "quality_table": "S29_partial_structure_panel_esmfold_quality.tsv",
+    "claim_frame": "Completed-structure subset for post hoc triage only; unfinished long proteins are structure-unavailable, not no-hit evidence."
+  },
+  "evidence_regime_enrichment": {
     "candidate_count": 27,
     "matched_control_count": 27,
     "optional_sources_supplied": {
@@ -23,7 +40,8 @@
       "domain_hits": false,
       "manual_evidence": false
     },
-    "module_supported_weak_evidence_regime": {
+    "interpretation": "High-context-gain candidates were not enriched for direct sequence/structure label support; they were enriched for an auxiliary module-coherent unresolved regime, supporting a conservative triage interpretation. Module coherence is not independent validation.",
+    "auxiliary_module_coherent_unresolved_regime": {
       "candidate_supported": 15,
       "control_supported": 6,
       "raw_odds_ratio": 4.375,
@@ -33,7 +51,6 @@
       ],
       "fisher_exact_p": 0.024449,
       "matched_pair_mcnemar_exact_p": 0.011719
-    },
-    "interpretation": "High-context-gain candidates were not enriched for direct sequence/structure label support; they were enriched for module-supported weak-evidence regimes, supporting a complementarity and triage interpretation."
+    }
   }
 }

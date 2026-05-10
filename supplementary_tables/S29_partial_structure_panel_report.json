@@ -1,0 +1,13 @@
+{
+  "panel_total_targets": 2277,
+  "esmfold_completed": 2231,
+  "esmfold_missing_or_failed": 46,
+  "esmfold_completion_rate": 0.979798,
+  "missing_or_failed_min_length": 2693,
+  "missing_or_failed_max_length": 8037,
+  "completed_structure_rows": 2231,
+  "foldseek_hit_rows": 819688,
+  "foldseek_queries_with_hits": 2147,
+  "completed_without_parsed_foldseek_hit": 84,
+  "claim_frame": "Partial stratified structure-panel evidence is used for post hoc triage only; missing long proteins are structure-unavailable, not no-hit or orphan evidence."
+}

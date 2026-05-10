@@ -1,0 +1,16 @@
+﻿{
+  "prediction_cache_root": ".\\runs\\review_additional_20260509_extracted\\runs\\v2_nohost_primary_multiseed\\multiseed_summary\\_prediction_by_seed",
+  "split_manifest": ".\\data\\processed\\splits\\viral_protein_strict_splits.tsv.gz",
+  "protein_index": ".\\data\\processed\\training\\viral_protein_training_index.tsv.gz",
+  "left_run": "protein_only.family_holdout",
+  "right_run": "genome_aware_nohost_local_genome.family_holdout",
+  "seed_count": 3,
+  "test_count": 66837,
+  "strict_zero_test_count": 65921,
+  "residual_exact_transfer_removed": 916,
+  "bootstrap_iterations": 100,
+  "median_strict_zero_label_delta_macro_ap": -0.00393881670463514,
+  "strict_zero_positive_label_count": 8,
+  "label_count": 17,
+  "claim_frame": "No-host strict-zero sensitivity and leave-one-label analyses quantify whether context gains are label-specific rather than uniform."
+}

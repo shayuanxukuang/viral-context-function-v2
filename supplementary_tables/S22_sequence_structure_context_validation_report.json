@@ -1,5 +1,5 @@
-{
-  "claim_frame": "Genome context complements sequence and structure by prioritizing and sometimes disambiguating candidate viral protein functions under leakage-aware OOD evaluation.",
+﻿{
+  "claim_frame": "Genome context provides label-specific candidate-prioritization signal when conventional sequence or structure evidence is weak, ambiguous, or incomplete under leakage-aware OOD evaluation.",
   "target_count": 72,
   "candidate_count": 27,
   "control_count": 27,
@@ -8,9 +8,9 @@
   "structure_summary_rows": 0,
   "homology_rows_indexed": 72,
   "outputs": {
-    "integrated_evidence": "<PROJECT_ROOT>/runs/v2_sequence_structure_validation_server/evidence/tables/validation_integrated_evidence.tsv",
-    "case_rankings": "<PROJECT_ROOT>/runs/v2_sequence_structure_validation_server/evidence/tables/figure6_candidate_case_rankings.tsv",
-    "ambiguity_metrics": "<PROJECT_ROOT>/runs/v2_sequence_structure_validation_server/evidence/tables/foldseek_structural_ambiguity_metrics.tsv",
-    "figures": "<PROJECT_ROOT>/runs/v2_sequence_structure_validation_server/evidence/figures"
+    "integrated_evidence": "runs/v2_sequence_structure_validation_server/evidence/tables/validation_integrated_evidence.tsv",
+    "case_rankings": "runs/v2_sequence_structure_validation_server/evidence/tables/figure6_candidate_case_rankings.tsv",
+    "ambiguity_metrics": "runs/v2_sequence_structure_validation_server/evidence/tables/foldseek_structural_ambiguity_metrics.tsv",
+    "figures": "runs/v2_sequence_structure_validation_server/evidence/figures"
   }
 }

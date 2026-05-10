@@ -19,8 +19,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--enrichment",
-        default="artifacts/return/v2_plos_cb_supplementary_package_20260506/supplementary_tables/S25_independent_evidence_enrichment.tsv",
-        help="S25 independent-evidence enrichment summary.",
+        default="artifacts/return/v2_plos_cb_supplementary_package_20260506/supplementary_tables/S25_evidence_regime_enrichment.tsv",
+        help="S25 evidence-regime enrichment summary.",
     )
     parser.add_argument(
         "--output-prefix",
@@ -218,12 +218,12 @@ def panel_d(ax: Any, rows: list[dict[str, str]]) -> None:
 
 
 def panel_e(ax: Any, enrichment_rows: list[dict[str, str]], label: str = "E") -> None:
-    add_panel_label(ax, label, "Independent evidence regime enrichment")
+    add_panel_label(ax, label, "Evidence-regime enrichment")
     by_feature = {row.get("feature"): row for row in enrichment_rows}
     features = [
         ("mmseqs_label_agreement", "MMseqs2 label\nagreement"),
         ("foldseek_confident_structural_hit", "Confident\nFoldseek hit"),
-        ("context_complement_regime", "Module-supported\nweak-evidence"),
+        ("context_complement_regime", "Auxiliary module-\ncoherent unresolved"),
     ]
     x = list(range(len(features)))
     width = 0.34
@@ -247,14 +247,14 @@ def panel_e(ax: Any, enrichment_rows: list[dict[str, str]], label: str = "E") ->
     ci_low = as_float(comp.get("raw_odds_ratio_woolf_95ci_low"))
     ci_high = as_float(comp.get("raw_odds_ratio_woolf_95ci_high"))
     fisher = as_float(comp.get("fisher_exact_p"))
-    stats = "Module-supported weak-evidence: raw OR={:.2f} (95% CI {:.2f}-{:.2f}); McNemar exact p=0.0117; Fisher p={:.3f}".format(
+    stats = "Auxiliary module-coherent unresolved: raw OR={:.2f} (95% CI {:.2f}-{:.2f}); McNemar exact p=0.0117; Fisher p={:.3f}".format(
         raw_or, ci_low, ci_high, fisher
     )
     ax.text(
         0.02,
         -0.23,
         wrap(
-            "High-context-gain candidates are less often sequence/structure-resolved, but are enriched in the complementarity regime. "
+            "High-context-gain candidates are less often sequence/structure-resolved, but are enriched in the auxiliary module-coherent unresolved regime. Not independent validation. "
             + stats,
             150,
         ),

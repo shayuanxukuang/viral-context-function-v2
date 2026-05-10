@@ -1,0 +1,12 @@
+﻿{
+  "run_root": "runs/v2_nohost_primary_cluster_multiseed",
+  "seed_roots": [
+    "runs/v2_nohost_primary_cluster_multiseed/seed_42",
+    "runs/v2_nohost_primary_cluster_multiseed/seed_43",
+    "runs/v2_nohost_primary_cluster_multiseed/seed_44"
+  ],
+  "completed_comparisons": 3,
+  "skipped": 0,
+  "output_tsv": "runs/v2_nohost_primary_cluster_multiseed/multiseed_summary_fixed_fast/multiseed_paired_block_bootstrap.tsv",
+  "claim_frame": "Use seed-averaged paired block bootstrap as the primary model-comparison statistic."
+}

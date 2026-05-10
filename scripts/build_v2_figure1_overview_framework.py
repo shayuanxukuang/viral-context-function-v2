@@ -129,7 +129,7 @@ def draw_panel_a(ax) -> None:
         (
             0.79,
             "Candidate triage",
-            "validation-targeted gate\n72-target panel\nmodule-supported weak evidence",
+            "validation-targeted gate\n72-target panel\nmodule-coherent unresolved",
             "#FFF8D9",
             PALETTE["yellow"],
         ),
@@ -149,7 +149,7 @@ def draw_panel_a(ax) -> None:
     ax.text(
         0.5,
         0.095,
-        "Genome context complements sequence and structure in weak, ambiguous, or incomplete evidence regimes.",
+        "Genome context provides label-specific candidate-prioritization signal in weak or ambiguous evidence regimes.",
         transform=ax.transAxes,
         ha="center",
         fontsize=8.3,

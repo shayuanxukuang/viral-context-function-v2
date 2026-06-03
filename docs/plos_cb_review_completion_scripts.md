@@ -22,7 +22,7 @@ Outputs:
 - `supplementary_tables/`: concrete S1-S20 source tables where available.
 - `supplementary_figures/`: generated S1-S5 and S7-S15 figures.
 - `supplement_completion_gap_report.tsv`: analyses that still require server outputs.
-- `supplementary_tables.zip` and `supplementary_figures.zip`.
+- Optional zip archives when `--make-zip` is used for local transfer. The PLOS upload-ready package is organized instead as `S1_Text.pdf`, `S1_Table.xlsx`, `S1_Fig.pdf`, and `S2_File_reproducibility_manifest.json`.
 
 ## Candidate case evidence
 

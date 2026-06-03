@@ -1,2 +1,117 @@
-missing_source	note
-<PROJECT_ROOT>/runs/context_study_v2_20260430_100225/data/v2_freeze/feature_manifest.tsv	source file not available
+name	source_table	provenance_group	minimum_task_mode	is_model_input_candidate	is_text_derived	is_train_only_stat	notes
+protein_sequence	training_index	sequence_raw	protein_only	1	0	0	Primary amino-acid sequence
+protein_length_aa	training_index	sequence_derived	protein_only	1	0	0	Length derived from sequence
+protein_sequence_sha256	training_index	identifier	protein_only	0	0	0	Sequence checksum
+protein_accession	training_index	identifier	protein_only	0	0	0	Record identifier
+genome_accession	training_index	identifier	genome_aware_denovo	0	0	0	Genome identifier
+genome_version	training_index	identifier	genome_aware_denovo	0	0	0	Genome version
+virus_tax_id	training_index	taxonomy_identifier	annotation_refinement	0	0	0	Virus taxonomic identifier
+virus_name	training_index	taxonomy_text	annotation_refinement	0	0	0	Virus name text
+virus_lineage	training_index	taxonomy_text	annotation_refinement	0	0	0	Virus lineage text
+protein_description	training_index	annotation_text	annotation_refinement	0	1	0	Protein free-text description
+cds_product	training_index	annotation_text	annotation_refinement	0	1	0	CDS product text
+cds_gene	training_index	annotation_text	annotation_refinement	0	1	0	Gene symbol text
+cds_locus_tag	training_index	identifier	annotation_refinement	0	0	0	Local locus tag
+protein_organism	training_index	annotation_text	annotation_refinement	0	1	0	Protein organism text
+source_mol_type	training_index	annotation_metadata	annotation_refinement	1	0	0	Molecule type from record
+source_segment	training_index	genome_structure	genome_aware_denovo	1	0	0	Segment identifier
+source_isolate	training_index	sample_metadata_text	annotation_refinement	0	0	0	Isolate text
+source_host	training_index	sample_metadata_text	annotation_refinement	0	0	0	Source host text
+source_geo_loc_name	training_index	sample_metadata_text	annotation_refinement	0	0	0	Geolocation text
+protein_feature_type	training_index	annotation_feature_type	annotation_refinement	1	0	0	Feature kind such as CDS/mat_peptide
+cds_location_raw	training_index	genome_coordinates	genome_aware_denovo	0	0	0	Raw genomic location string
+cds_location_kind	training_index	genome_coordinates	genome_aware_denovo	0	0	0	Joined/complement location kind
+cds_start	training_index	genome_coordinates	genome_aware_denovo	1	0	0	CDS start coordinate
+cds_end	training_index	genome_coordinates	genome_aware_denovo	1	0	0	CDS end coordinate
+cds_strand	training_index	genome_coordinates	genome_aware_denovo	1	0	0	CDS strand
+cds_part_count	training_index	genome_coordinates	genome_aware_denovo	1	0	0	Part count for joined CDS
+cds_partial_left	training_index	genome_coordinates	genome_aware_denovo	1	0	0	Left truncation flag
+cds_partial_right	training_index	genome_coordinates	genome_aware_denovo	1	0	0	Right truncation flag
+host_join_strategy	training_index	annotation_pipeline	annotation_refinement	1	0	0	How host metadata was joined
+host_record_count	training_index	host_taxonomy	genome_aware_denovo	1	0	0	Host association count
+host_tax_ids_json	training_index	host_taxonomy	genome_aware_denovo	0	0	0	Host taxon identifiers
+host_names_json	training_index	host_taxonomy_text	annotation_refinement	0	0	0	Host names
+host_lineages_json	training_index	host_taxonomy	genome_aware_denovo	0	0	0	Host lineage values
+host_evidence_json	training_index	host_taxonomy	annotation_refinement	0	0	0	Host evidence terms
+host_pmids_json	training_index	host_taxonomy	annotation_refinement	0	0	0	Host evidence PMIDs
+host_sample_types_json	training_index	sample_metadata_text	annotation_refinement	0	0	0	Host sample types
+host_source_organisms_json	training_index	sample_metadata_text	annotation_refinement	0	0	0	Host source organisms
+reviewed_uniprot_entries_for_taxon	training_index	knowledgebase_summary	annotation_refinement	1	0	0	UniProt reviewed count
+reviewed_uniprot_entries_with_go_for_taxon	training_index	knowledgebase_summary	annotation_refinement	1	0	0	UniProt GO count
+reviewed_uniprot_entries_with_interpro_for_taxon	training_index	knowledgebase_summary	annotation_refinement	1	0	0	UniProt InterPro count
+reviewed_uniprot_entries_with_ec_for_taxon	training_index	knowledgebase_summary	annotation_refinement	1	0	0	UniProt EC count
+log_protein_length	derived_numeric	sequence_derived	protein_only	1	0	0	Log protein length
+log_host_record_count	derived_numeric	host_taxonomy	annotation_refinement	1	0	0	Log host record count
+log_uniprot_entries	derived_numeric	knowledgebase_summary	annotation_refinement	1	0	0	Log UniProt reviewed count
+log_uniprot_go_entries	derived_numeric	knowledgebase_summary	annotation_refinement	1	0	0	Log UniProt GO count
+log_uniprot_interpro_entries	derived_numeric	knowledgebase_summary	annotation_refinement	1	0	0	Log UniProt InterPro count
+log_uniprot_ec_entries	derived_numeric	knowledgebase_summary	annotation_refinement	1	0	0	Log UniProt EC count
+is_hypothetical	derived_numeric	annotation_text	annotation_refinement	1	1	0	Derived from hypothetical/uncharacterized text marker
+is_mat_peptide	derived_numeric	annotation_feature_type	annotation_refinement	1	0	0	Derived from feature type
+bio_tm_helix_count	biophysics	sequence_derived_biophysics	protein_only	1	0	0	Cheap sequence-derived biophysical heuristic
+bio_tm_longest_hydrophobic_run	biophysics	sequence_derived_biophysics	protein_only	1	0	0	Cheap sequence-derived biophysical heuristic
+bio_signal_peptide_score	biophysics	sequence_derived_biophysics	protein_only	1	0	0	Cheap sequence-derived biophysical heuristic
+bio_coiled_coil_score	biophysics	sequence_derived_biophysics	protein_only	1	0	0	Cheap sequence-derived biophysical heuristic
+bio_disorder_score	biophysics	sequence_derived_biophysics	protein_only	1	0	0	Cheap sequence-derived biophysical heuristic
+bio_low_complexity_fraction	biophysics	sequence_derived_biophysics	protein_only	1	0	0	Cheap sequence-derived biophysical heuristic
+context_prev_length_bin	context_splitaware	local_neighborhood_context	genome_aware_denovo	1	0	0	Local neighborhood category
+context_next_length_bin	context_splitaware	local_neighborhood_context	genome_aware_denovo	1	0	0	Local neighborhood category
+context_has_prev_neighbor	context_splitaware	local_neighborhood_context	genome_aware_denovo	1	0	0	Local neighborhood numeric
+context_has_next_neighbor	context_splitaware	local_neighborhood_context	genome_aware_denovo	1	0	0	Local neighborhood numeric
+context_prev_gap_nt	context_splitaware	local_neighborhood_context	genome_aware_denovo	1	0	0	Local neighborhood numeric
+context_next_gap_nt	context_splitaware	local_neighborhood_context	genome_aware_denovo	1	0	0	Local neighborhood numeric
+context_prev_overlap_nt	context_splitaware	local_neighborhood_context	genome_aware_denovo	1	0	0	Local neighborhood numeric
+context_next_overlap_nt	context_splitaware	local_neighborhood_context	genome_aware_denovo	1	0	0	Local neighborhood numeric
+context_same_strand_prev	context_splitaware	local_neighborhood_context	genome_aware_denovo	1	0	0	Local neighborhood numeric
+context_same_strand_next	context_splitaware	local_neighborhood_context	genome_aware_denovo	1	0	0	Local neighborhood numeric
+context_segment_bucket	context_splitaware	genome_organization_context	genome_aware_denovo	1	0	0	Genome segment bucket
+context_log_genome_protein_count	context_splitaware	genome_organization_context	genome_aware_denovo	1	0	0	Genome-scale organization numeric
+context_relative_order_fraction	context_splitaware	genome_organization_context	genome_aware_denovo	1	0	0	Genome-scale organization numeric
+context_segment_count	context_splitaware	genome_organization_context	genome_aware_denovo	1	0	0	Genome-scale organization numeric
+context_log_genome_span_nt	context_splitaware	genome_organization_context	genome_aware_denovo	1	0	0	Genome-scale organization numeric
+context_orf_density_per_kb	context_splitaware	genome_organization_context	genome_aware_denovo	1	0	0	Genome-scale organization numeric
+context_genome_mean_protein_length	context_splitaware	genome_organization_context	genome_aware_denovo	1	0	0	Genome-scale organization numeric
+context_genome_protein_length_cv	context_splitaware	genome_organization_context	genome_aware_denovo	1	0	0	Genome-scale organization numeric
+context_host_supergroup	context_splitaware	host_metadata_context	genome_aware_denovo	1	0	0	Collapsed host taxonomy supergroup
+context_log_host_taxid_count	context_splitaware	host_metadata_context	genome_aware_denovo	1	0	0	Host metadata count feature
+context_log_host_lineage_count	context_splitaware	host_metadata_context	genome_aware_denovo	1	0	0	Host metadata count feature
+context_prev_feature_type	context_splitaware	annotation_context	annotation_refinement	1	0	0	Neighbor annotation state
+context_next_feature_type	context_splitaware	annotation_context	annotation_refinement	1	0	0	Neighbor annotation state
+context_genome_hypothetical_fraction	context_splitaware	annotation_context	annotation_refinement	1	1	0	Annotation-derived context numeric
+context_genome_mat_peptide_fraction	context_splitaware	annotation_context	annotation_refinement	1	0	0	Annotation-derived context numeric
+context_prev_is_hypothetical	context_splitaware	annotation_context	annotation_refinement	1	1	0	Annotation-derived context numeric
+context_next_is_hypothetical	context_splitaware	annotation_context	annotation_refinement	1	1	0	Annotation-derived context numeric
+context_train_genome_polymerase_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_helicase_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_protease_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_capsid_head_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_tail_fiber_receptor_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_tail_assembly_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_portal_terminase_packaging_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_lysis_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_envelope_glycoprotein_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_membrane_matrix_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_nucleocapsid_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_integrase_recombinase_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_nuclease_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_methyltransferase_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_ligase_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_transcription_regulator_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_genome_polyprotein_fraction	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_polymerase_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_helicase_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_protease_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_capsid_head_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_tail_fiber_receptor_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_tail_assembly_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_portal_terminase_packaging_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_lysis_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_envelope_glycoprotein_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_membrane_matrix_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_nucleocapsid_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_integrase_recombinase_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_nuclease_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_methyltransferase_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_ligase_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_transcription_regulator_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only
+context_train_local_polyprotein_count	context_splitaware	train_fold_weak_label_prior	annotation_refinement	1	1	1	Weak-label prior built from train partition only

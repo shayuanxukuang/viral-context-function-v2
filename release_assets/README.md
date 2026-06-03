@@ -2,10 +2,13 @@
 
 This public repository tracks code, manifests, reproduction notes, and unpacked supplementary/source tables.
 
-The full packaged supplementary archive is kept outside the Git repository because it may contain article figures or manuscript-adjacent material:
+The PLOS upload-ready supplementary package is now organized as separate files rather than zip archives:
 
 ```text
-<LOCAL_WORKSPACE>\artifacts\return\v2_plos_cb_supplementary_package_20260506.zip
+S1_Text.pdf
+S1_Table.xlsx
+S1_Fig.pdf
+S2_File_reproducibility_manifest.json
 ```
 
-Upload that archive only when the authors intentionally release the full manuscript/supplement package.
+The GitHub repository intentionally keeps manuscript text, compiled submission PDFs, and most article figures out of version control. The corrected S2 label-frequency preview image is included here so the packaging correction is visible on the repository page. The source values for that preview are in `data_manifest/freeze_report.json` and `supplementary_tables/S1_label_positive_counts.tsv`.

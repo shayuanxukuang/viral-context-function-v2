@@ -1,9 +1,30 @@
-﻿{
+{
   "output_dir": "supplementary_package",
   "supplementary_table_count": 73,
-  "supplementary_figure_count": 18,
-  "tables_zip": "supplementary_package\\supplementary_tables.zip",
-  "figures_zip": "supplementary_package\\supplementary_figures.zip",
+  "supplementary_figure_count": 21,
+  "plos_upload_files": {
+    "S1_Text": "S1_Text.pdf",
+    "S1_Table": "S1_Table.xlsx",
+    "S1_Fig": "S1_Fig.pdf",
+    "S2_File": "S2_File_reproducibility_manifest.json"
+  },
+  "optional_local_transfer_archives": {
+    "tables_zip": "supplementary_package\\supplementary_tables.zip",
+    "figures_zip": "supplementary_package\\supplementary_figures.zip"
+  },
+  "packaging_correction_2026_06_03": {
+    "scope": "Corrected an intermediate supplementary packaging export in which the S2 label-frequency panel and several freeze-derived source tables were empty or placeholder files.",
+    "corrected_preview": "release_assets/S2_label_frequency_distribution.png",
+    "corrected_source_tables": [
+      "supplementary_tables/S1_label_positive_counts.tsv",
+      "supplementary_tables/S1_split_label_counts.tsv",
+      "supplementary_tables/S2_label_manifest.tsv",
+      "supplementary_tables/S4_feature_manifest.tsv",
+      "supplementary_tables/S20_checksum_manifest.tsv"
+    ],
+    "source_of_truth": "data_manifest/freeze_report.json and data_manifest/*_manifest.tsv",
+    "claim_impact": "Packaging correction only; frozen data version, model outputs, benchmark metrics, and manuscript claims are unchanged."
+  },
   "server_sync_source": "server_sync_source_redacted.tar.gz",
   "sequence_structure_context_extension": {
     "target_count": 72,

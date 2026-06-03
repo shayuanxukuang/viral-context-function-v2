@@ -117,6 +117,23 @@ def read_json(path: Path, default: Any = None) -> Any:
         return json.load(handle)
 
 
+def freeze_file(core_dir: Path, name: str) -> Path:
+    """Resolve freeze artifacts in either run-output or public-release layout."""
+    data_manifest_name = "checksum_manifest.tsv" if name == "checksums.tsv" else name
+    candidates = [
+        core_dir / "data" / "v2_freeze" / name,
+        core_dir / "data_manifest" / data_manifest_name,
+    ]
+    for path in candidates:
+        if path.exists():
+            return path
+    return candidates[0]
+
+
+def read_freeze_report(core_dir: Path) -> dict[str, Any]:
+    return read_json(freeze_file(core_dir, "freeze_report.json"), {}) or {}
+
+
 def copy_or_empty(src: Path, dst: Path, note: str = "") -> None:
     dst.parent.mkdir(parents=True, exist_ok=True)
     if src.exists():
@@ -144,7 +161,7 @@ def panel(ax: plt.Axes, title: str) -> None:
 
 
 def write_dataset_summary(core_dir: Path, tables_dir: Path) -> None:
-    freeze = read_json(core_dir / "data" / "v2_freeze" / "freeze_report.json", {})
+    freeze = read_freeze_report(core_dir)
     rows = [
         {"quantity": "created_at", "value": freeze.get("created_at", "")},
         {"quantity": "protein_count", "value": freeze.get("protein_count", "")},
@@ -344,11 +361,10 @@ def write_table_package(args: argparse.Namespace, tables_dir: Path) -> None:
     core = args.core_dir
     qc = args.qc_dir
     assets = args.assets_dir
-    freeze = core / "data" / "v2_freeze"
     write_dataset_summary(core, tables_dir)
-    copy_or_empty(freeze / "label_manifest.tsv", tables_dir / "S2_label_manifest.tsv")
+    copy_or_empty(freeze_file(core, "label_manifest.tsv"), tables_dir / "S2_label_manifest.tsv")
     write_split_manifest(args.split_manifest, tables_dir)
-    copy_or_empty(freeze / "feature_manifest.tsv", tables_dir / "S4_feature_manifest.tsv")
+    copy_or_empty(freeze_file(core, "feature_manifest.tsv"), tables_dir / "S4_feature_manifest.tsv")
     copy_or_empty(qc / "qc3_forbidden_feature_check.tsv", tables_dir / "S5_forbidden_feature_check.tsv")
     copy_or_empty(assets / "figure1_leakage_summary.tsv", tables_dir / "S6_leakage_audit.tsv")
     copy_or_empty(qc / "qc1_strict_zero_exact_transfer_metrics.tsv", tables_dir / "S7_strict_zero_exact_transfer_sensitivity.tsv")
@@ -374,7 +390,7 @@ def write_table_package(args: argparse.Namespace, tables_dir: Path) -> None:
     if evidence_dir.exists():
         copy_or_empty(evidence_dir / "candidate_case_evidence.tsv", tables_dir / "S19_candidate_case_evidence.tsv")
         copy_or_empty(evidence_dir / "candidate_case_neighborhoods.tsv", tables_dir / "S19_candidate_case_neighborhoods.tsv")
-    copy_or_empty(freeze / "checksums.tsv", tables_dir / "S20_checksum_manifest.tsv")
+    copy_or_empty(freeze_file(core, "checksums.tsv"), tables_dir / "S20_checksum_manifest.tsv")
     copy_or_empty(core / "v2_suite_manifest.json", tables_dir / "S20_v2_suite_manifest.json")
     copy_or_empty(core / "frozen_benchmark_v2_runs.tsv", tables_dir / "S20_frozen_benchmark_run_registry.tsv")
 
@@ -407,13 +423,17 @@ def figure_s1(core_dir: Path, assets_dir: Path, fig_dir: Path) -> None:
 
 
 def figure_s2(core_dir: Path, fig_dir: Path) -> None:
-    freeze = read_json(core_dir / "data" / "v2_freeze" / "freeze_report.json", {})
+    freeze = read_freeze_report(core_dir)
     counts = freeze.get("label_positive_counts", {})
     rows = sorted(counts.items(), key=lambda kv: kv[1])
     fig, ax = plt.subplots(figsize=(8, 5))
-    ax.barh([r[0] for r in rows], [r[1] for r in rows], color=PALETTE["context"])
-    ax.set_xlabel("positive proteins")
-    ax.set_xscale("log")
+    if rows:
+        ax.barh([r[0] for r in rows], [r[1] for r in rows], color=PALETTE["context"])
+        ax.set_xlabel("positive proteins")
+        ax.set_xscale("log")
+    else:
+        ax.axis("off")
+        ax.text(0.02, 0.5, "Label counts unavailable; check freeze_report.json.", transform=ax.transAxes)
     panel(ax, "S2. Label frequency distribution")
     savefig(fig, fig_dir, "S2_label_frequency_distribution")
 

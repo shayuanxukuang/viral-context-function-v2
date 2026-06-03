@@ -10,6 +10,16 @@ This repository contains the public code, manifests, reproduction notes, and sup
 
 The central claim is conservative: genome context is not a uniformly superior predictor under family-heldout evaluation, but can provide label-specific and candidate-level prioritization signal when conventional sequence or structure evidence is weak, ambiguous, or incomplete.
 
+## Supplementary Packaging Note
+
+The public supplementary/source-table copy was refreshed on 2026-06-03 after an internal packaging audit found that one label-frequency figure panel and several freeze-derived source tables had been exported as empty or placeholder files in an intermediate upload bundle. This was a packaging/export issue only; it did not change the frozen data version, model outputs, benchmark metrics, manuscript claims, or submitted conclusions.
+
+The corrected `S2_label_frequency_distribution` panel below is generated from `data_manifest/freeze_report.json` (`label_positive_counts`). The corresponding non-empty source tables are available in `supplementary_tables/S1_label_positive_counts.tsv`, `supplementary_tables/S1_split_label_counts.tsv`, `supplementary_tables/S2_label_manifest.tsv`, `supplementary_tables/S4_feature_manifest.tsv`, and `supplementary_tables/S20_checksum_manifest.tsv`.
+
+<p align="center">
+  <img src="release_assets/S2_label_frequency_distribution.png" alt="Corrected supplementary S2 label frequency distribution" width="850">
+</p>
+
 ## What Is Included
 
 - `scripts/`: analysis, QC, homology, candidate-prioritization, sequence-structure-context triangulation, and manuscript-asset scripts.

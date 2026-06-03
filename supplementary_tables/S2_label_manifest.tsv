@@ -1,2 +1,18 @@
-missing_source	note
-<PROJECT_ROOT>/runs/context_study_v2_20260430_100225/data/v2_freeze/label_manifest.tsv	source file not available
+label	functional_group	description	positive_count	kept_primary	patterns_json	default_train_positives	default_calibration_positives	default_val_positives	default_test_positives	family_holdout_train_positives	family_holdout_calibration_positives	family_holdout_val_positives	family_holdout_test_positives	host_holdout_train_positives	host_holdout_calibration_positives	host_holdout_val_positives	host_holdout_test_positives	calibration_train_positives	calibration_calibration_positives	calibration_val_positives	calibration_test_positives
+polymerase	replication_transcription	Polymerase and replicase machinery	14353	1	"[""rna-dependent rna polymerase"", ""dna polymerase"", ""\\bpolymerase\\b"", ""\\breplicase\\b"", ""reverse transcriptase"", ""\\btranscriptase\\b""]"	11521	0	1478	1354	11582	0	1427	1344	10660	0	2228	1465	10394	1188	1427	1344
+helicase	replication_transcription	Helicases and unwinding proteins	8183	1	"[""\\bhelicase\\b""]"	6574	0	804	805	6767	0	552	864	5983	0	1373	827	6085	682	552	864
+protease	processing_enzyme	Proteases and processing enzymes	5120	1	"[""\\bprotease\\b"", ""\\bproteinase\\b""]"	4078	0	530	512	4297	0	388	435	3828	0	821	471	3854	443	388	435
+capsid_head	structural_assembly	Capsid and head structural proteins	13765	1	"[""\\bcapsid\\b"", ""\\bcoat protein\\b"", ""\\bhead protein\\b"", ""\\bmajor head protein\\b""]"	10967	0	1405	1393	11015	0	942	1808	10679	0	1804	1282	9906	1109	942	1808
+tail_fiber_receptor	host_interface	Tail fiber, tail spike, and receptor-binding proteins	14973	1	"[""tail fiber"", ""tail spike"", ""baseplate"", ""receptor binding""]"	11907	0	1549	1517	13173	0	624	1176	9876	0	3652	1445	11911	1262	624	1176
+tail_assembly	structural_assembly	Tail assembly and morphogenesis proteins	49444	1	"[""\\btail\\b"", ""tape measure"", ""tail assembly""]"	39555	0	5228	4661	39238	0	5516	4690	38297	0	7211	3936	35286	3952	5516	4690
+portal_terminase_packaging	genome_packaging	Portal, terminase, and genome packaging proteins	14115	1	"[""portal protein"", ""terminase"", ""packaging""]"	11267	0	1439	1409	11496	0	1230	1389	10574	0	2212	1329	10394	1102	1230	1389
+lysis	lysis_integration	Lysis and cell wall disruption proteins	14190	1	"[""endolysin"", ""\\blysin\\b"", ""\\bholin\\b"", ""\\bspanin\\b"", ""\\blysozyme\\b""]"	11365	0	1467	1358	11040	0	1618	1532	10725	0	2424	1041	9966	1074	1618	1532
+envelope_glycoprotein	membrane_entry	Envelope and glycoprotein structural proteins	3418	1	"[""glycoprotein"", ""envelope protein"", ""spike protein""]"	2696	0	380	342	2981	0	68	369	2543	0	396	479	2662	319	68	369
+membrane_matrix	membrane_entry	Membrane and matrix-associated proteins	6627	1	"[""membrane protein"", ""matrix protein"", ""\\bmembrane\\b""]"	5200	0	778	649	5921	0	211	495	5116	0	841	670	5157	764	211	495
+nucleocapsid	structural_assembly	Nucleocapsid proteins	673	1	"[""nucleocapsid""]"	553	0	58	62	532	0	8	133	550	0	46	77	466	66	8	133
+integrase_recombinase	lysis_integration	Integrases and recombinases	2556	1	"[""\\bintegrase\\b"", ""\\brecombinase\\b""]"	2071	0	251	234	2140	0	192	224	2009	0	338	209	1901	239	192	224
+nuclease	processing_enzyme	Nucleases and nucleic acid processing proteins	19690	1	"[""\\bnuclease\\b"", ""endonuclease"", ""exonuclease""]"	15824	0	2045	1821	16011	0	1928	1751	14642	0	3460	1588	14330	1681	1928	1751
+methyltransferase	processing_enzyme	Methyltransferases	3506	1	"[""methyltransferase""]"	2844	0	370	292	2789	0	406	311	2593	0	543	370	2467	322	406	311
+ligase	processing_enzyme	Ligases	3397	1	"[""\\bligase\\b""]"	2763	0	331	303	2904	0	262	231	2208	0	831	358	2615	289	262	231
+transcription_regulator	replication_transcription	Transcriptional regulators and activators	4888	1	"[""transcriptional regulator"", ""transcription regulator"", ""transactivator""]"	3861	0	539	488	4116	0	255	517	3462	0	947	479	3699	417	255	517
+polyprotein	processing_enzyme	Polyprotein precursors	1949	1	"[""\\bpolyprotein\\b""]"	1549	0	189	211	1698	0	39	212	1513	0	211	225	1517	181	39	212

@@ -28,21 +28,25 @@ Release metadata:
 - Source tables for label-level robustness, current-NCBI evidence triage,
   sequence-structure-context triage, and the matched 160-protein Phold panel.
 
-## GitHub vs Zenodo
+## Repository and Data Archive
 
-GitHub contains code, documentation, label rules, split/checksum manifests,
-baseline summaries, small examples, and Phold panel source tables.
+This repository is the working entry point for the benchmark. It includes the
+code, evaluator, documentation, label rules, split/checksum manifests, baseline
+summaries, small examples, and compact source tables needed to inspect or run
+the resource.
 
-The archived data release is on Zenodo:
+The citable data archive is:
 
 ```text
 https://doi.org/10.5281/zenodo.20925484
 ```
 
-Zenodo contains sequence FASTA/metadata, full source tables, baseline
-prediction exports, Phold panel outputs, and reproducibility manifests. ESM
+The Zenodo record stores the larger release files: sequence FASTA and metadata,
+full source tables, baseline prediction exports, Phold panel outputs, and
+reproducibility manifests. Very large rebuildable artifacts, including ESM
 embeddings, model checkpoints, Foldseek/Phold databases, and predicted
-structure archives are treated as rebuildable large artifacts.
+structure archives, are described by identifiers, checksums, target FASTA files,
+and scripts rather than bundled directly.
 
 ## Benchmark Tracks
 

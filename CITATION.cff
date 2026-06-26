@@ -1,10 +1,18 @@
 cff-version: 1.2.0
-message: Please cite this software and dataset if you use the ViruFunc V2 context benchmark.
-title: ViruFunc V2 leakage-aware genome-context benchmark
-version: 0.1.0
-date-released: 2026-05-06
+message: "If you use ViruFunc Atlas, please cite the manuscript and archived release."
+title: "ViruFunc Atlas v1.0: a leakage-aware benchmark and reusable evaluation resource for viral protein function annotation"
+version: "v1.0.2-atlas-resource-revision"
+date-released: "2026-06-25"
+repository-code: "https://github.com/shayuanxukuang/viral-context-function-v2"
+doi: "10.5281/zenodo.20925484"
 authors:
   - family-names: Wang
     given-names: Kuanghao
-  - family-names: Shi
-    given-names: Hong
+preferred-citation:
+  type: dataset
+  title: "ViruFunc Atlas v1.0: a leakage-aware benchmark and reusable evaluation resource for viral protein function annotation"
+  authors:
+    - family-names: Wang
+      given-names: Kuanghao
+  year: 2026
+  doi: "10.5281/zenodo.20925484"

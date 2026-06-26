@@ -1,6 +1,10 @@
-# PLOS CB review-completion scripts
+# Historical Review-Completion Scripts
 
-This note lists the scripts added to turn the current ViruFunc V2 manuscript package into reviewer-facing supplementary artifacts and rerunnable missing analyses.
+This note records legacy review-completion scripts that were used during the
+development history of ViruFunc Atlas. The public release is now organized as
+ViruFunc Atlas v1.0, a leakage-aware benchmark and reusable evaluation resource.
+These commands are retained only as provenance for historical run directories
+that used the internal `v2_*` naming convention.
 
 ## Local supplement package
 
@@ -11,7 +15,7 @@ python scripts/make_v2_supplementary_package.py \
   --core-dir artifacts/return/extracted_v2_20260430_100225 \
   --qc-dir artifacts/return/extracted_v2_qc_20260430_100225/qc_review \
   --assets-dir artifacts/return/v2_manuscript_assets_20260430_100225 \
-  --output-dir artifacts/return/v2_plos_cb_supplementary_package_20260503 \
+  --output-dir artifacts/return/v2_review_supplementary_package_20260503 \
   --protein-index data/processed/training/viral_protein_training_index.tsv.gz \
   --split-manifest data/processed/splits/viral_protein_strict_splits.tsv.gz \
   --make-zip
@@ -22,7 +26,7 @@ Outputs:
 - `supplementary_tables/`: concrete S1-S20 source tables where available.
 - `supplementary_figures/`: generated S1-S5 and S7-S15 figures.
 - `supplement_completion_gap_report.tsv`: analyses that still require server outputs.
-- Optional zip archives when `--make-zip` is used for local transfer. The PLOS upload-ready package is organized instead as `S1_Text.pdf`, `S1_Table.xlsx`, `S1_Fig.pdf`, and `S2_File_reproducibility_manifest.json`.
+- Optional zip archives when `--make-zip` is used for local transfer. The submission package is organized instead as `S1_Text.pdf`, `S1_Table.xlsx`, `S1_Fig.pdf`, and `S2_File_reproducibility_manifest.json`.
 
 ## Candidate case evidence
 
@@ -30,11 +34,11 @@ Build post hoc evidence tables and local neighborhood windows for all 27 high-co
 
 ```bash
 python scripts/build_candidate_case_evidence.py \
-  --candidates artifacts/return/v2_plos_cb_supplementary_package_20260503/supplementary_tables/S16_high_context_gain_candidates.tsv \
+  --candidates artifacts/return/v2_review_supplementary_package_20260503/supplementary_tables/S16_high_context_gain_candidates.tsv \
   --protein-index data/processed/training/viral_protein_training_index.tsv.gz \
   --split-manifest data/processed/splits/viral_protein_strict_splits.tsv.gz \
   --module-candidates artifacts/return/extracted_v2_20260430_100225/module_discovery/module_candidates.tsv \
-  --output-dir artifacts/return/v2_plos_cb_supplementary_package_20260503/candidate_case_evidence
+  --output-dir artifacts/return/v2_review_supplementary_package_20260503/candidate_case_evidence
 ```
 
 If homology, domain, or structure hits are available, add:

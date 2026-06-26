@@ -1,0 +1,18 @@
+label_id	pattern	exclude_pattern	weight	notes
+polymerase	polymerase|rna-dependent rna polymerase|dna polymerase|replicase|reverse transcriptase|rdrp		1.0	Polymerase and replicase terms.
+helicase	helicase|superfamily 3 helicase|sf3 helicase|dna helicase|rna helicase		1.0	Helicase terms.
+protease	protease|peptidase|proteinase|cysteine protease|serine protease|aspartyl protease		1.0	Protease terms.
+capsid_head	capsid|major capsid|minor capsid|head protein|coat protein|shell protein|virion protein	portal|terminase|tail|envelope|nucleocapsid|matrix	1.0	Capsid/head structural terms.
+tail_fiber_receptor	tail fiber|tail fibre|receptor binding|receptor-binding|host recognition|depolymerase|tail spike|tailspike|adhesin		1.0	Tail fiber and receptor-associated terms.
+tail_assembly	tail protein|tail assembly|tail sheath|tail tube|baseplate|tape measure|tail completion|neck protein|connector protein	tail fiber|tail fibre|receptor binding|tail spike|tailspike	1.0	Tail assembly terms excluding receptor/fiber-specific cases.
+portal_terminase_packaging	portal|terminase|large terminase|small terminase|packaging|dna packaging|headful|prohead|scaffold		1.0	Portal/terminase/packaging terms.
+lysis	lysis|lysin|endolysin|holin|spanin|amidase|muramidase|peptidoglycan hydrolase|lysozyme		1.0	Lysis terms.
+envelope_glycoprotein	envelope glycoprotein|glycoprotein|surface glycoprotein|spike protein|attachment glycoprotein|fusion glycoprotein	matrix|membrane protein|nucleocapsid	1.0	Envelope and viral glycoprotein terms.
+membrane_matrix	membrane protein|matrix protein|tegument|ion channel|viroporin|transmembrane protein|M protein	glycoprotein|envelope glycoprotein	1.0	Membrane/matrix terms.
+nucleocapsid	nucleocapsid|nucleoprotein|\bn protein\b|capsid-associated nucleoprotein		1.0	Nucleocapsid/nucleoprotein terms.
+integrase_recombinase	integrase|recombinase|resolvase|transposase|excisionase|tyrosine recombinase|serine recombinase		1.0	Integration and recombination terms.
+nuclease	nuclease|endonuclease|exonuclease|ribonuclease|dnase|rnase|hnh endonuclease|homing endonuclease		1.0	Nuclease terms.
+methyltransferase	methyltransferase|methylase|methyltransf|n6-adenine methyltransferase|c5 cytosine methyltransferase		1.0	Methyltransferase terms.
+ligase	ligase|dna ligase|rna ligase|ubiquitin ligase		1.0	Ligase terms.
+transcription_regulator	transcription regulator|transcriptional regulator|transcription factor|anti-terminator|antiterminator|regulatory protein|repressor|activator		1.0	Transcription/regulatory terms.
+polyprotein	polyprotein|polyprotein precursor|replicase polyprotein|orf1ab|orf1a		1.0	Polyprotein terms.

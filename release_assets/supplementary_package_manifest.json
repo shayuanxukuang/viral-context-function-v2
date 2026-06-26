@@ -2,7 +2,7 @@
   "output_dir": "supplementary_package",
   "supplementary_table_count": 73,
   "supplementary_figure_count": 21,
-  "plos_upload_files": {
+  "submission_files": {
     "S1_Text": "S1_Text.pdf",
     "S1_Table": "S1_Table.xlsx",
     "S1_Fig": "S1_Fig.pdf",

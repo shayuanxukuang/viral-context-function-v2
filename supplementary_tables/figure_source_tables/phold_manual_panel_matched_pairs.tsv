@@ -1,0 +1,81 @@
+blind_pair_id	pair_type	high_audit_id	control_audit_id	high_accession	control_accession	high_predicted_label	control_predicted_label	high_functional_group	control_functional_group	high_phold_informative_agreement	control_phold_informative_agreement	high_phold_product	control_phold_product
+MGA-P0001	high-/control-	MGA-0026	MGA-0031	YP_007236697.1	YP_010062353.1	tail_assembly	tail_assembly	structural_assembly	structural_assembly	0	0	tail terminator	hypothetical protein
+MGA-P0002	high-/control-	MGA-0157	MGA-0151	YP_009703414.1	YP_009702575.1	envelope_glycoprotein	envelope_glycoprotein	membrane_entry	membrane_entry	0	0	hypothetical protein	hypothetical protein
+MGA-P0003	high+/control-	MGA-0148	MGA-0158	YP_010052625.1	YP_009882186.1	portal_terminase_packaging	portal_terminase_packaging	genome_packaging	genome_packaging	1	0	terminase small subunit	dihydrofolate reductase
+MGA-P0004	high-/control-	MGA-0013	MGA-0084	YP_010746850.1	YP_009595819.1	transcription_regulator	transcription_regulator	replication_transcription	replication_transcription	0	0	amidase	hypothetical protein
+MGA-P0005	high+/control-	MGA-0033	MGA-0104	YP_010748066.1	YP_010012693.1	tail_assembly	tail_assembly	structural_assembly	structural_assembly	1	0	Tail assembly chaperone	hypothetical protein
+MGA-P0006	high+/control-	MGA-0108	MGA-0133	YP_009150120.1	YP_004323431.1	nuclease	nuclease	processing_enzyme	processing_enzyme	1	0	HNH endonuclease	hypothetical protein
+MGA-P0007	high-/control-	MGA-0071	MGA-0087	YP_010087802.1	YP_009508339.1	capsid_head	capsid_head	structural_assembly	structural_assembly	0	0	virion structural protein	hypothetical protein
+MGA-P0008	high+/control-	MGA-0029	MGA-0005	YP_009703824.1	YP_009903249.1	methyltransferase	methyltransferase	processing_enzyme	processing_enzyme	1	0	DNA methyltransferase	hypothetical protein
+MGA-P0009	high-/control-	MGA-0082	MGA-0110	YP_010102011.1	NP_733919.1	transcription_regulator	transcription_regulator	replication_transcription	replication_transcription	0	0	hypothetical protein	hypothetical protein
+MGA-P0010	high-/control-	MGA-0037	MGA-0135	NP_043516.1	YP_009173941.1	capsid_head	capsid_head	structural_assembly	structural_assembly	0	0	hypothetical protein	ribonucleoside-diphosphate reductase large subunit
+MGA-P0011	high-/control-	MGA-0007	MGA-0146	YP_010806200.1	YP_009147543.1	integrase_recombinase	integrase_recombinase	lysis_integration	lysis_integration	0	0	DNA invertase	hypothetical protein
+MGA-P0012	high+/control-	MGA-0156	MGA-0042	YP_009927164.1	YP_010013299.1	helicase	helicase	replication_transcription	replication_transcription	1	0	DNA helicase	replication initiation protein
+MGA-P0013	high+/control-	MGA-0070	MGA-0059	YP_009177323.1	YP_009854787.1	tail_assembly	tail_assembly	structural_assembly	structural_assembly	1	0	tail completion or Neck1 protein	hypothetical protein
+MGA-P0014	high+/control-	MGA-0159	MGA-0154	YP_009854910.1	YP_010077792.1	protease	protease	processing_enzyme	processing_enzyme	1	0	head maturation protease	DNA end protector
+MGA-P0015	high-/control-	MGA-0064	MGA-0066	YP_009837753.1	YP_009902460.1	tail_fiber_receptor	tail_fiber_receptor	host_interface	host_interface	0	0	hypothetical protein	hypothetical protein
+MGA-P0016	high-/control-	MGA-0106	MGA-0150	YP_013034596.1	YP_004009454.1	capsid_head	capsid_head	structural_assembly	structural_assembly	0	0	hypothetical protein	hypothetical protein
+MGA-P0017	high-/control-	MGA-0002	MGA-0036	YP_009505383.1	YP_009553592.1	helicase	helicase	replication_transcription	replication_transcription	0	0	hypothetical protein	DNA primase
+MGA-P0018	high+/control-	MGA-0142	MGA-0116	YP_010112320.1	YP_009884716.1	tail_assembly	tail_assembly	structural_assembly	structural_assembly	1	0	tail protein	hypothetical protein
+MGA-P0019	high-/control-	MGA-0041	MGA-0025	YP_009507983.1	YP_010798445.1	capsid_head	capsid_head	structural_assembly	structural_assembly	0	0	hypothetical protein	hypothetical protein
+MGA-P0020	high-/control-	MGA-0093	MGA-0039	YP_009043949.1	YP_009146309.1	tail_assembly	tail_assembly	structural_assembly	structural_assembly	0	0	tail chaperone protein	virion structural protein
+MGA-P0021	high+/control-	MGA-0068	MGA-0061	YP_009336562.1	YP_009889675.1	polymerase	polymerase	replication_transcription	replication_transcription	1	0	Reverse transcriptase	hypothetical protein
+MGA-P0022	high+/control-	MGA-0024	MGA-0044	YP_009336762.1	YP_009229898.1	polymerase	polymerase	replication_transcription	replication_transcription	1	0	Reverse transcriptase	hypothetical protein
+MGA-P0023	high-/control+	MGA-0153	MGA-0138	YP_009337095.1	YP_010746183.1	polyprotein	protease	processing_enzyme	processing_enzyme	0	1	alkylated DNA repair	peptidase HslV family
+MGA-P0024	high+/control-	MGA-0054	MGA-0096	YP_010747430.1	YP_009884612.1	transcription_regulator	transcription_regulator	replication_transcription	replication_transcription	1	0	excisionase and transcriptional regulator	hypothetical protein
+MGA-P0025	high-/control-	MGA-0117	MGA-0098	YP_009552731.1	YP_009111342.1	capsid_head	capsid_head	structural_assembly	structural_assembly	0	0	hypothetical protein	hypothetical protein
+MGA-P0026	high+/control-	MGA-0132	MGA-0043	YP_009508880.1	YP_009408631.1	capsid_head	capsid_head	structural_assembly	structural_assembly	1	0	neck protein	hypothetical protein
+MGA-P0027	high-/control-	MGA-0119	MGA-0137	YP_010112081.1	YP_010112397.1	capsid_head	capsid_head	structural_assembly	structural_assembly	0	0	hypothetical protein	tail fiber protein and host specificity
+MGA-P0028	high-/control-	MGA-0086	MGA-0046	YP_008433444.1	YP_002456056.1	polymerase	polymerase	replication_transcription	replication_transcription	0	0	hypothetical protein	hypothetical protein
+MGA-P0029	high+/control-	MGA-0094	MGA-0112	YP_010747553.1	YP_008433633.1	transcription_regulator	transcription_regulator	replication_transcription	replication_transcription	1	0	anti-repressor Ant	phosphoesterase
+MGA-P0030	high-/control-	MGA-0034	MGA-0048	YP_009600898.1	YP_009836056.1	protease	protease	processing_enzyme	processing_enzyme	0	0	hypothetical protein	hypothetical protein
+MGA-P0031	high+/control-	MGA-0018	MGA-0035	YP_010748313.1	YP_009903342.1	helicase	helicase	replication_transcription	replication_transcription	1	0	replicative helicase-primase	DNA primase
+MGA-P0032	high+/control-	MGA-0145	MGA-0016	YP_009844370.1	YP_009851327.1	tail_assembly	tail_assembly	structural_assembly	structural_assembly	1	0	tail tube	hypothetical protein
+MGA-P0033	high-/control-	MGA-0140	MGA-0136	YP_001129350.1	YP_009703616.1	envelope_glycoprotein	envelope_glycoprotein	membrane_entry	membrane_entry	0	0	tail protein	hypothetical protein
+MGA-P0034	high-/control-	MGA-0095	MGA-0050	YP_010657872.1	YP_010796370.1	helicase	helicase	replication_transcription	replication_transcription	0	0	DNA primase	terminase small subunit
+MGA-P0035	high-/control-	MGA-0121	MGA-0101	YP_008433554.1	YP_010658282.1	nuclease	nuclease	processing_enzyme	processing_enzyme	0	0	hypothetical protein	hypothetical protein
+MGA-P0036	high+/control-	MGA-0090	MGA-0010	YP_009277043.1	YP_007673830.1	tail_fiber_receptor	tail_fiber_receptor	host_interface	host_interface	1	0	tail spike protein	virion structural protein
+MGA-P0037	high-/control-	MGA-0003	MGA-0113	YP_009598348.1	YP_007673895.1	portal_terminase_packaging	portal_terminase_packaging	genome_packaging	genome_packaging	0	0	hypothetical protein	hypothetical protein
+MGA-P0038	high-/control-	MGA-0092	MGA-0015	YP_010084632.1	YP_010084434.1	envelope_glycoprotein	envelope_glycoprotein	membrane_entry	membrane_entry	0	0	hypothetical protein	hypothetical protein
+MGA-P0039	high+/control-	MGA-0001	MGA-0128	YP_009789651.1	YP_009908112.1	tail_fiber_receptor	tail_fiber_receptor	host_interface	host_interface	1	0	EPS depolymerase	hypothetical protein
+MGA-P0040	high-/control-	MGA-0063	MGA-0014	YP_009448186.1	YP_009389283.1	envelope_glycoprotein	envelope_glycoprotein	membrane_entry	membrane_entry	0	0	hypothetical protein	DNA primase
+MGA-P0041	high+/control-	MGA-0123	MGA-0139	YP_010745723.1	YP_009796746.1	transcription_regulator	transcription_regulator	replication_transcription	replication_transcription	1	0	anti-repressor Ant	deoxynucleoside monophosphate kinase
+MGA-P0042	high-/control-	MGA-0049	MGA-0131	YP_010052518.1	YP_010052593.1	lysis	lysis	lysis_integration	lysis_integration	0	0	hypothetical protein	hypothetical protein
+MGA-P0043	high-/control-	MGA-0102	MGA-0085	YP_009191793.1	YP_010667629.1	lysis	lysis	lysis_integration	lysis_integration	0	0	hypothetical protein	hypothetical protein
+MGA-P0044	high-/control-	MGA-0126	MGA-0115	YP_009337333.1	YP_006908825.1	polyprotein	nuclease	processing_enzyme	processing_enzyme	0	0	tail protein	hypothetical protein
+MGA-P0045	high+/control-	MGA-0129	MGA-0143	YP_010679925.1	YP_004539068.1	protease	protease	processing_enzyme	processing_enzyme	1	0	head maturation protease	porphyrin biosynthesis
+MGA-P0046	high-/control-	MGA-0091	MGA-0076	YP_010077892.1	YP_004322593.1	ligase	ligase	processing_enzyme	processing_enzyme	0	0	hypothetical protein	hypothetical protein
+MGA-P0047	high-/control-	MGA-0075	MGA-0020	YP_009026381.1	YP_009808794.1	nucleocapsid	tail_assembly	structural_assembly	structural_assembly	0	0	hypothetical protein	head closure Hc1
+MGA-P0048	high+/control-	MGA-0089	MGA-0004	YP_009362537.1	YP_224050.1	ligase	ligase	processing_enzyme	processing_enzyme	1	0	RNA ligase	hypothetical protein
+MGA-P0049	high+/control-	MGA-0019	MGA-0012	YP_009703402.1	YP_009483883.1	helicase	helicase	replication_transcription	replication_transcription	1	0	DNA helicase	DNA primase
+MGA-P0050	high+/control-	MGA-0122	MGA-0060	NP_981940.1	YP_009547935.1	capsid_head	capsid_head	structural_assembly	structural_assembly	1	0	tail protein and host specificity	virion structural protein
+MGA-P0051	high-/control-	MGA-0155	MGA-0120	YP_010012616.1	YP_010102150.1	membrane_matrix	membrane_matrix	membrane_entry	membrane_entry	0	0	hypothetical protein	hypothetical protein
+MGA-P0052	high-/control-	MGA-0045	MGA-0053	NP_047986.1	YP_009552481.1	envelope_glycoprotein	envelope_glycoprotein	membrane_entry	membrane_entry	0	0	hypothetical protein	hypothetical protein
+MGA-P0053	high+/control-	MGA-0103	MGA-0130	YP_010748697.1	YP_009796229.1	nuclease	nuclease	processing_enzyme	processing_enzyme	1	0	endonuclease	superinfection exclusion
+MGA-P0054	high+/control-	MGA-0006	MGA-0056	YP_010748124.1	YP_009789256.1	tail_assembly	tail_assembly	structural_assembly	structural_assembly	1	0	minor tail protein	hypothetical protein
+MGA-P0055	high+/control-	MGA-0038	MGA-0152	YP_009845699.1	YP_010060107.1	methyltransferase	methyltransferase	processing_enzyme	processing_enzyme	1	0	DNA methyltransferase	esterase/lipase
+MGA-P0056	high+/control-	MGA-0069	MGA-0118	YP_010747576.1	YP_010060191.1	nuclease	nuclease	processing_enzyme	processing_enzyme	1	0	exonuclease	hypothetical protein
+MGA-P0057	high-/control-	MGA-0067	MGA-0134	YP_009362021.1	YP_009507654.1	capsid_head	capsid_head	structural_assembly	structural_assembly	0	0	hypothetical protein	hypothetical protein
+MGA-P0058	high+/control+	MGA-0017	MGA-0080	YP_007349016.1	YP_009147528.1	tail_fiber_receptor	tail_fiber_receptor	host_interface	host_interface	1	1	tail fiber protein	adhesin
+MGA-P0059	high+/control-	MGA-0114	MGA-0021	YP_009284844.1	YP_010104268.1	membrane_matrix	membrane_matrix	membrane_entry	membrane_entry	1	0	membrane protein	hypothetical protein
+MGA-P0060	high-/control-	MGA-0027	MGA-0062	YP_008126274.1	YP_009219143.1	membrane_matrix	membrane_matrix	membrane_entry	membrane_entry	0	0	excisionase	site-specific recombination directionality factor RDF
+MGA-P0061	high-/control-	MGA-0088	MGA-0011	YP_010840638.1	YP_009553185.1	nucleocapsid	capsid_head	structural_assembly	structural_assembly	0	0	hypothetical protein	hypothetical protein
+MGA-P0062	high+/control-	MGA-0105	MGA-0057	YP_009009939.1	YP_006907054.2	tail_assembly	tail_assembly	structural_assembly	structural_assembly	1	0	neck protein	tail fiber protein
+MGA-P0063	high-/control-	MGA-0032	MGA-0065	NP_048013.1	YP_009927108.1	envelope_glycoprotein	envelope_glycoprotein	membrane_entry	membrane_entry	0	0	hypothetical protein	hypothetical protein
+MGA-P0064	high-/control-	MGA-0022	MGA-0030	YP_009284814.1	YP_010107639.1	membrane_matrix	membrane_matrix	membrane_entry	membrane_entry	0	0	hypothetical protein	hypothetical protein
+MGA-P0065	high-/control-	MGA-0058	MGA-0109	YP_009044448.1	YP_010085922.1	capsid_head	capsid_head	structural_assembly	structural_assembly	0	0	hypothetical protein	hypothetical protein
+MGA-P0066	high-/control-	MGA-0008	MGA-0127	YP_009336846.1	YP_001218841.1	polyprotein	nuclease	processing_enzyme	processing_enzyme	0	0	hypothetical protein	hypothetical protein
+MGA-P0067	high-/control-	MGA-0078	MGA-0107	YP_009274081.1	YP_010109350.1	membrane_matrix	membrane_matrix	membrane_entry	membrane_entry	0	0	hypothetical protein	hypothetical protein
+MGA-P0068	high-/control-	MGA-0074	MGA-0141	YP_009337396.1	YP_009337752.1	polymerase	polymerase	replication_transcription	replication_transcription	0	0	hypothetical protein	hypothetical protein
+MGA-P0069	high-/control-	MGA-0144	MGA-0079	YP_008408785.1	YP_009197118.1	membrane_matrix	membrane_matrix	membrane_entry	membrane_entry	0	0	hypothetical protein	hypothetical protein
+MGA-P0070	high-/control-	MGA-0009	MGA-0147	YP_009342068.1	YP_009333290.1	capsid_head	capsid_head	structural_assembly	structural_assembly	0	0	hypothetical protein	hypothetical protein
+MGA-P0071	high-/control-	MGA-0077	MGA-0073	YP_009333607.1	YP_010740074.1	polyprotein	nuclease	processing_enzyme	processing_enzyme	0	0	hypothetical protein	hypothetical protein
+MGA-P0072	high-/control-	MGA-0124	MGA-0097	YP_009336782.1	YP_010667650.1	polyprotein	nuclease	processing_enzyme	processing_enzyme	0	0	virion structural protein	hypothetical protein
+MGA-P0073	high+/control-	MGA-0052	MGA-0083	YP_006906856.1	YP_009187898.1	nuclease	nuclease	processing_enzyme	processing_enzyme	1	0	NinG/ Rap DNA junction specific endonuclease	hypothetical protein
+MGA-P0074	high-/control-	MGA-0023	MGA-0160	YP_010084666.1	NP_733894.1	portal_terminase_packaging	portal_terminase_packaging	genome_packaging	genome_packaging	0	0	hypothetical protein	hypothetical protein
+MGA-P0075	high+/control-	MGA-0099	MGA-0051	YP_009342339.1	YP_009615961.1	polymerase	polymerase	replication_transcription	replication_transcription	1	0	Reverse transcriptase	phosphatase
+MGA-P0076	high+/control-	MGA-0100	MGA-0055	YP_012173176.1	YP_009807004.1	portal_terminase_packaging	portal_terminase_packaging	genome_packaging	genome_packaging	1	0	portal protein	RecT-like ssDNA annealing protein
+MGA-P0077	high-/control-	MGA-0125	MGA-0111	YP_010086207.1	YP_010840792.1	nucleocapsid	nucleocapsid	structural_assembly	structural_assembly	0	0	hypothetical protein	hypothetical protein
+MGA-P0078	high-/control-	MGA-0047	MGA-0040	YP_010110095.1	YP_010096704.1	membrane_matrix	membrane_matrix	membrane_entry	membrane_entry	0	0	hypothetical protein	hypothetical protein
+MGA-P0079	high-/control-	MGA-0081	MGA-0072	YP_010798459.1	YP_009129270.1	capsid_head	capsid_head	structural_assembly	structural_assembly	0	0	tail fiber protein	hypothetical protein
+MGA-P0080	high+/control-	MGA-0149	MGA-0028	YP_009837643.1	YP_009798792.1	integrase_recombinase	integrase_recombinase	lysis_integration	lysis_integration	1	0	UvsX-like recombinase	ribonucleoside diphosphate reductase small subunit

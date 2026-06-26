@@ -1,38 +1,54 @@
-# Python
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.mypy_cache/
+# raw and processed data layers
+data/raw/
+data/interim/
+data/processed/
+data/full/
+data/provenance/*.json
+data/provenance/*.jsonl
 
-# Local environments
-.venv/
-venv/
-env/
-*.conda/
-
-# Large/generated data kept out of git
-data/
-runs/
-artifacts/
-checkpoints/
+# large or regenerable ML/structure artifacts
 embeddings/
+checkpoints/
+model_checkpoints/
+foldseek_db/
+phold_db/
+predicted_structures/
 *.pt
 *.pth
 *.ckpt
-*.npy
-*.npz
-*.h5
-*.hdf5
-
-# Structure databases and predicted structures
-foldseek_db/
-pdb100/
 *.pdb
-*.cif
-*.bcif
+*.m8
+*.dbtype
+*.index
 
-# Temporary files
-*.tmp
+# local run outputs and transfer fragments
+runs/
+tmp/
 *.part
-*.log
+*.zip
+*.tar
+*.tar.gz
 
+# Python/cache noise
+__pycache__/
+*.pyc
+
+# keep lightweight benchmark-release entrypoints
+!benchmark/
+!benchmark/**
+!configs/
+!configs/**
+!data_manifest/
+!data_manifest/**
+!examples/
+!examples/**
+!predictions/
+!predictions/**
+!release/
+!release/**
+release/.zenodo_stage/
+release/zenodo_bundles/*.tar.gz
+!release/zenodo_bundles/README.md
+!release/zenodo_bundles/checksums.tsv
+!supplementary_tables/
+!supplementary_tables/**

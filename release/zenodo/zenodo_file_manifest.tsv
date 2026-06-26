@@ -1,0 +1,7 @@
+filename	contents	recommended_location	notes
+ViruFunc_Atlas_v1.0_Core.tar.gz	README, LICENSE/notice, CITATION.cff, evaluator, validator, configs, label rules, small examples, compact manifests	Zenodo primary record	Small enough to mirror on GitHub.
+ViruFunc_Atlas_v1.0_SourceTables.tar.gz	Manuscript figure source tables, supplementary TSV/XLSX inputs, leakage audits, label robustness tables	Zenodo primary record	Include source tables needed to reproduce reported manuscript statistics.
+ViruFunc_Atlas_v1.0_Sequences.tar.gz	FASTA targets, sequence metadata, accession manifest, retrieval/freeze metadata, checksums	Zenodo primary record	Derived from public sequence records; do not claim ownership of source sequences.
+ViruFunc_Atlas_v1.0_BaselinePredictions.tar.gz	Baseline prediction files, prediction-cache exports, baseline metrics, leaderboard-ready outputs	Zenodo primary record	Exclude large regenerable embeddings and checkpoints unless explicitly required.
+ViruFunc_Atlas_v1.0_Phold_PHROG_panel.tar.gz	160-protein Phold panel FASTA manifest, per-CDS predictions, mapped concordance, matched-pair tables, Phold run manifest	Zenodo primary record	Matched post hoc external-evidence panel.
+ViruFunc_Atlas_v1.0_ReproducibilityManifest.tar.gz	Checksums, run manifests, environment files, rebuild scripts, command logs, data provenance notes	Zenodo primary record	Use this bundle to connect GitHub code to large Zenodo files.

@@ -1,0 +1,60 @@
+layer	path	status	notes
+Atlas-Core	README.md	present	Project README exists; should be refreshed before public benchmark release.
+Atlas-Core	LICENSE	pending_owner_decision	Do not choose a legal license automatically; project owner must select code/data licenses.
+Atlas-Core	CITATION.cff	present	Added for citation metadata.
+Atlas-Core	CHANGELOG.md	present	Added resource-revision changelog.
+Atlas-Core	data_card.md	present	Added data card for the public release.
+Atlas-Core	benchmark_card.md	present	Added benchmark card for the public release.
+Atlas-Core	data/manifests/family_heldout_train.tsv	server_export_needed	Can be generated from data/processed/splits/viral_protein_strict_splits.tsv.gz.
+Atlas-Core	data/manifests/family_heldout_val.tsv	server_export_needed	Can be generated from data/processed/splits/viral_protein_strict_splits.tsv.gz.
+Atlas-Core	data/manifests/family_heldout_test.tsv	server_export_needed	Can be generated from data/processed/splits/viral_protein_strict_splits.tsv.gz.
+Atlas-Core	data/manifests/strict_zero_test.tsv	server_export_needed	Use exact-transfer audit outputs.
+Atlas-Core	data/manifests/host_heldout_train.tsv	server_export_needed	Can be generated from strict split manifest.
+Atlas-Core	data/manifests/host_heldout_val.tsv	server_export_needed	Can be generated from strict split manifest.
+Atlas-Core	data/manifests/host_heldout_test.tsv	server_export_needed	Can be generated from strict split manifest.
+Atlas-Core	data/manifests/cluster30_train.tsv	server_export_needed	Can be generated from sequence-cluster split outputs.
+Atlas-Core	data/manifests/cluster30_test.tsv	server_export_needed	Can be generated from sequence-cluster split outputs.
+Atlas-Core	data/manifests/cluster50_train.tsv	server_export_needed	Can be generated from sequence-cluster split outputs.
+Atlas-Core	data/manifests/cluster50_test.tsv	server_export_needed	Can be generated from sequence-cluster split outputs.
+Atlas-Core	data/manifests/cluster70_train.tsv	server_export_needed	Can be generated from sequence-cluster split outputs.
+Atlas-Core	data/manifests/cluster70_test.tsv	server_export_needed	Can be generated from sequence-cluster split outputs.
+Atlas-Core	data/labels/label_ontology.tsv	server_export_needed	Can be generated from cached label_names and label manifest.
+Atlas-Core	data/labels/label_groups.tsv	server_export_needed	Can be generated from functional-group mapping.
+Atlas-Core	data/labels/ncbi_product_mapping_rules.yaml	pending_conversion	Current rules exist as script logic; export to data/labels before release.
+Atlas-Core	data/labels/synonym_rules.tsv	present_as_config	configs/external_baseline_label_mapping.tsv provides external-baseline label mapping.
+Atlas-Core	data/labels/excluded_labels.tsv	server_export_needed	Export from label manifest / filtering settings.
+Atlas-Core	data/sequences/proteins.faa	server_export_needed	Export from training index; may be large but Core-relevant.
+Atlas-Core	data/sequences/genomes.tsv	server_export_needed	Export from training index genome metadata.
+Atlas-Core	data/sequences/proteins_metadata.tsv	server_export_needed	Export from training index without raw large fields if needed.
+Atlas-Core	data/sequences/genome_gene_order.tsv	server_export_needed	Export coordinates/order from training index.
+Atlas-Core	data/audits/exact_transfer_audit.tsv	present_in_source_tables	Include existing exact-transfer audit source table in Core package.
+Atlas-Core	data/audits/nearest_neighbor_label_transfer.tsv	present_in_source_tables	Include nearest-neighbor label-transfer audit source table.
+Atlas-Core	data/audits/family_overlap_summary.tsv	present_in_source_tables	Include family/host overlap summaries.
+Atlas-Core	data/audits/forbidden_feature_manifest.yaml	present_in_source_tables	Include forbidden-feature manifest and audit output.
+Atlas-Core	predictions/baselines/prevalence_baseline.parquet	pending_export	Easy to generate; not yet exported in this local pass.
+Atlas-Core	predictions/baselines/nearest_neighbor_label_transfer.parquet	present_in_source_tables	Source table exists; convert/copy to baseline prediction format before release.
+Atlas-Core	predictions/baselines/mmseqs2_tophit_label_transfer.parquet	present_in_source_tables	Source table exists; convert/copy to baseline prediction format before release.
+Atlas-Core	predictions/baselines/protein_only_plm_seed42.parquet	present_as_npz	Current cache exists as NPZ; export to release format before public release.
+Atlas-Core	predictions/baselines/protein_only_plm_seed43.parquet	pending_export	Export from multiseed prediction cache.
+Atlas-Core	predictions/baselines/protein_only_plm_seed44.parquet	pending_export	Export from multiseed prediction cache.
+Atlas-Core	predictions/baselines/local_genome_nohost_seed42.parquet	present_as_npz	Current cache exists as NPZ; export to release format before public release.
+Atlas-Core	predictions/baselines/local_genome_nohost_seed43.parquet	pending_export	Export from multiseed prediction cache.
+Atlas-Core	predictions/baselines/local_genome_nohost_seed44.parquet	pending_export	Export from multiseed prediction cache.
+Atlas-Core	predictions/baselines/PHROG_or_Phold_mapped.parquet	resubmission_gate	Run PHROG or Phold annotation table through scripts/score_external_annotation_baseline.py.
+Atlas-Core	benchmark/evaluate_predictions.py	present	Long-format evaluator added.
+Atlas-Core	benchmark/validate_submission.py	present	Validation wrapper added.
+Atlas-Core	benchmark/metrics_config.yaml	present	Track/metric policy added.
+Atlas-Core	benchmark/bootstrap_family_blocks.py	present	Family-block bootstrap helper added.
+Atlas-Core	benchmark/make_leaderboard_table.py	present	Leaderboard TSV builder added.
+Atlas-Core	examples/submission_template.csv	present	Minimal template added.
+Atlas-Core	examples/minimal_prediction_example.csv	present	Toy prediction example added.
+Atlas-Core	examples/run_evaluation.sh	present	Toy evaluation command added.
+Atlas-Core	docker/Dockerfile	present	Core evaluator container added.
+Atlas-Core	environment.yml	present	Core conda environment added.
+Atlas-Core	leaderboard/README.md	present	Leaderboard instructions added.
+Atlas-Core	leaderboard/leaderboard_v1.tsv	present	Toy/example leaderboard added.
+Atlas-Full	embeddings/protein_plm_embeddings.zarr_or_shards	large_artifact	Keep outside the Core archive; include checksum/regeneration instructions.
+Atlas-Full	model_checkpoints	large_artifact	Keep outside the Core archive; include model registry and checksums.
+Atlas-Full	foldseek_panels	large_artifact	Structure panels exist partially; full-test external baseline still pending.
+Atlas-Full	esmfold_targets	present_in_source_tables	Include FASTA target lists and regeneration scripts.
+Atlas-Full	regenerated_structure_scripts	present	Existing ESMFold/Foldseek scripts plus new baseline scorer.

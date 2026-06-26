@@ -2,7 +2,7 @@
 
 This public repository tracks code, manifests, reproduction notes, and unpacked supplementary/source tables.
 
-The PLOS upload-ready supplementary package is now organized as separate files rather than zip archives:
+The submission supplementary package is organized as separate files rather than zip archives:
 
 ```text
 S1_Text.pdf

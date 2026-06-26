@@ -1,0 +1,4 @@
+panel_name	stratum	n	phold_high_confidence	phold_medium_or_high_confidence	phold_any_functional_hit	phold_label_agreement	phold_group_agreement	phold_informative_agreement
+manual_gold_160	high_context_candidate	80	38	43	45	31	33	33
+manual_gold_160	matched_control	80	35	37	26	2	2	2
+manual_gold_160	all	160	73	80	71	33	35	35

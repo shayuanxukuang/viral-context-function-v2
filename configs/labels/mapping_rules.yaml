@@ -1,0 +1,43 @@
+version: v1.0.2-atlas-resource-revision
+title: "ViruFunc Atlas v1.0 external-evidence mapping rules"
+
+ontology_table: configs/labels/label_ontology.tsv
+functional_group_table: configs/labels/label_groups.tsv
+external_baseline_mapping_tsv: configs/external_baseline_label_mapping.tsv
+
+normalization:
+  lowercase: true
+  trim_whitespace: true
+  collapse_repeated_whitespace: true
+  remove_punctuation_for_matching: false
+
+rule_priority:
+  - exact_label_id
+  - include_pattern_without_exclude_pattern
+  - functional_group_match
+  - unmapped_or_ambiguous
+
+evidence_tracks:
+  T1_sequence_only_de_novo:
+    external_annotation_text_allowed: false
+    notes: "Only target sequence or sequence-derived embeddings are de novo inputs."
+  T2_genome_context_nohost:
+    external_annotation_text_allowed: false
+    notes: "Adds local neighborhood and genome-organization features, but no product text, homology labels, or host metadata."
+  T3_audited_metadata_context:
+    external_annotation_text_allowed: false
+    notes: "Allows declared host/taxonomy metadata with host-heldout, shuffle, and corruption controls."
+  T4_annotation_refinement_open_evidence:
+    external_annotation_text_allowed: true
+    notes: "MMseqs2, PHROG/Phold-style annotations, Foldseek, InterPro/Pfam/CDD, product text, and similar evidence are post hoc annotation-refinement evidence."
+
+tail_fiber_receptor_scope:
+  status: external_evidence_subcategory
+  parent_group: host_interface
+  manuscript_phrase: "tail fiber/receptor-associated function"
+  notes: "Do not treat this as a newly trained primary model ontology unless the label manifest is regenerated and models are rerun."
+
+unmapped_policy:
+  keep_unmapped_rows: true
+  report_unmapped_annotation_text: true
+  exclude_unmapped_from_exact_concordance_numerator: true

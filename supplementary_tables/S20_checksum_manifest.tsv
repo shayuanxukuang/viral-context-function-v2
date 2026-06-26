@@ -1,10 +1,10 @@
 item	value
 github_repository	https://github.com/shayuanxukuang/viral-context-function-v2
-github_release_tag	v1.0.0-ploscb-submission
-github_release_title	ViruFunc V2 PLOS CB submission archive
+github_release_tag	v1.0.2-atlas-resource-revision
+github_release_title	ViruFunc Atlas v1.0: a leakage-aware benchmark and reusable evaluation resource for viral protein function annotation
 github_release_commit	a4ea53b957178715c4136b22c737aa90003f9e0a
-zenodo_doi	10.5281/zenodo.20103860
-zenodo_url	https://doi.org/10.5281/zenodo.20103860
+zenodo_doi	10.5281/zenodo.20925484
+zenodo_url	https://doi.org/10.5281/zenodo.20925484
 license	MIT
 excluded_large_artifacts	frozen pLM embeddings; model checkpoints; Foldseek databases; predicted structure archives
 regeneration_note	Large artifacts can be regenerated from the public release scripts, manifests, model identifiers, and commands described in the reproducibility package.

@@ -1,0 +1,5 @@
+protein_id	virus_family	true_labels
+YP_EXAMPLE_0001	FamA	nuclease
+YP_EXAMPLE_0002	FamA	lysis
+YP_EXAMPLE_0003	FamB	tail_assembly
+YP_EXAMPLE_0004	FamB	nuclease;lysis

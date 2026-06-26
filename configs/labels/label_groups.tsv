@@ -1,0 +1,8 @@
+functional_group	label_count	labels
+genome_packaging	1	portal_terminase_packaging
+host_interface	1	tail_fiber_receptor
+lysis_integration	2	integrase_recombinase,lysis
+membrane_entry	2	envelope_glycoprotein,membrane_matrix
+processing_enzyme	5	ligase,methyltransferase,nuclease,polyprotein,protease
+replication_transcription	3	helicase,polymerase,transcription_regulator
+structural_assembly	3	capsid_head,nucleocapsid,tail_assembly

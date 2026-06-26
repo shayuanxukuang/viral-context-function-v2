@@ -1,14 +1,9 @@
-name: viral-context-function-v2
+name: virufunc-atlas-core
 channels:
-  - pytorch
   - conda-forge
 dependencies:
   - python>=3.10
-  - pytorch
   - numpy
-  - pandas
   - scikit-learn
-  - scipy
-  - matplotlib
-  - seaborn
-  - tqdm
+  - pandas
+  - pyyaml

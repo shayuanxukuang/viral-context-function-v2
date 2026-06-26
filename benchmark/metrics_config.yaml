@@ -1,0 +1,130 @@
+# ViruFunc Atlas Core metrics and track policy.
+#
+# Prediction files are long-format CSV/TSV:
+#   protein_id,label_id,score
+#
+# Scores must be probabilities or calibrated ranks in [0, 1]. Missing
+# protein-label scores are invalid unless the evaluator is run with
+# --allow-missing, in which case missing scores are treated as zero.
+
+primary_metric: family_heldout_strict_zero_macro_AP
+secondary_metrics:
+  - macro_F1
+  - micro_AP
+  - micro_F1
+uncertainty:
+  family_block_bootstrap_iterations: 1000
+  confidence_interval: 0.95
+  block_columns:
+    - virus_family
+    - family
+
+tracks:
+  T1_sequence_only_de_novo:
+    ranking_metric: family_heldout_strict_zero_macro_AP
+    allowed_features:
+      - target_sequence
+      - sequence_embedding
+      - sequence_length
+      - training_labels
+    forbidden_features:
+      - host
+      - taxonomy
+      - gene_order
+      - coordinates
+      - neighbor_sequences
+      - neighbor_labels
+      - product_text
+      - external_annotation_labels
+      - database_hit_counts
+      - mmseqs2
+      - foldseek
+      - phold
+      - phrog
+      - interpro
+      - pfam
+      - cdd
+
+  T2_genome_context_nohost:
+    ranking_metric: family_heldout_strict_zero_macro_AP
+    allowed_features:
+      - target_sequence
+      - sequence_embedding
+      - neighbor_sequences
+      - gene_order
+      - coordinates
+      - strand
+      - gap_overlap
+      - segment_topology
+      - genome_topology
+      - sequence_length
+      - training_labels
+    forbidden_features:
+      - host
+      - taxonomy
+      - neighbor_labels
+      - product_text
+      - external_annotation_labels
+      - database_hit_counts
+      - mmseqs2
+      - foldseek
+      - phold
+      - phrog
+      - interpro
+      - pfam
+      - cdd
+
+  T3_audited_metadata_context:
+    ranking_metric: family_heldout_macro_AP_with_host_heldout_secondary
+    allowed_features:
+      - target_sequence
+      - sequence_embedding
+      - neighbor_sequences
+      - gene_order
+      - coordinates
+      - strand
+      - gap_overlap
+      - segment_topology
+      - genome_topology
+      - host
+      - taxonomy
+      - sequence_length
+      - training_labels
+    forbidden_features:
+      - neighbor_labels
+      - product_text
+      - external_annotation_labels
+      - database_hit_counts
+      - mmseqs2
+      - foldseek
+      - phold
+      - phrog
+      - interpro
+      - pfam
+      - cdd
+
+  T4_annotation_refinement_open_evidence:
+    ranking_metric: practical_annotation_family_heldout_macro_AP
+    allowed_features:
+      - target_sequence
+      - sequence_embedding
+      - neighbor_sequences
+      - gene_order
+      - coordinates
+      - strand
+      - gap_overlap
+      - segment_topology
+      - genome_topology
+      - host
+      - taxonomy
+      - product_text
+      - external_annotation_labels
+      - database_hit_counts
+      - mmseqs2
+      - foldseek
+      - phold
+      - phrog
+      - interpro
+      - pfam
+      - cdd
+      - test_annotation_priors

@@ -1,0 +1,4 @@
+protein_id,label_id,score
+YP_EXAMPLE_0001,nuclease,0.0
+YP_EXAMPLE_0001,lysis,0.0
+YP_EXAMPLE_0001,tail_assembly,0.0

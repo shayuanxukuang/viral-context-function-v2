@@ -1,0 +1,13 @@
+protein_id,label_id,score
+YP_EXAMPLE_0001,nuclease,0.91
+YP_EXAMPLE_0001,lysis,0.04
+YP_EXAMPLE_0001,tail_assembly,0.02
+YP_EXAMPLE_0002,nuclease,0.08
+YP_EXAMPLE_0002,lysis,0.86
+YP_EXAMPLE_0002,tail_assembly,0.04
+YP_EXAMPLE_0003,nuclease,0.03
+YP_EXAMPLE_0003,lysis,0.05
+YP_EXAMPLE_0003,tail_assembly,0.88
+YP_EXAMPLE_0004,nuclease,0.78
+YP_EXAMPLE_0004,lysis,0.64
+YP_EXAMPLE_0004,tail_assembly,0.07

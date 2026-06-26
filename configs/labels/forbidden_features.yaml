@@ -1,0 +1,64 @@
+version: v1.0.2-atlas-resource-revision
+title: "ViruFunc Atlas v1.0 feature-boundary rules"
+
+global_forbidden_for_de_novo:
+  - normalized_product_text
+  - raw_product_text
+  - protein_name
+  - gene_symbol_when_annotation_derived
+  - database_hit_label
+  - external_annotation_label
+  - PHROG_or_Phold_annotation
+  - Foldseek_target_annotation
+  - InterPro_Pfam_CDD_domain_text
+  - post_freeze_current_annotation
+
+tracks:
+  T1_sequence_only_de_novo:
+    allowed_feature_families:
+      - target_sequence
+      - sequence_derived_numeric_features
+      - frozen_protein_language_model_embedding
+    forbidden_feature_families:
+      - genome_context
+      - host_metadata
+      - annotation_text
+      - homology_or_structure_evidence
+      - post_freeze_evidence
+  T2_genome_context_nohost:
+    allowed_feature_families:
+      - target_sequence
+      - sequence_derived_numeric_features
+      - frozen_protein_language_model_embedding
+      - neighbor_sequences
+      - gene_order
+      - genome_coordinates
+      - strand
+      - gaps_and_overlaps
+      - genome_topology
+    forbidden_feature_families:
+      - host_metadata
+      - annotation_text
+      - homology_or_structure_evidence
+      - post_freeze_evidence
+  T3_audited_metadata_context:
+    allowed_feature_families:
+      - T2_genome_context_nohost
+      - declared_host_metadata
+      - declared_taxonomy_metadata
+    required_controls:
+      - host_holdout
+      - host_shuffle
+      - host_corruption
+    forbidden_feature_families:
+      - annotation_text
+      - homology_or_structure_evidence
+      - post_freeze_evidence
+  T4_annotation_refinement_open_evidence:
+    allowed_feature_families:
+      - MMseqs2_or_other_sequence_homology
+      - PHROG_or_Phold_style_annotation
+      - Foldseek_or_structure_similarity
+      - InterPro_Pfam_CDD_domain_evidence
+      - product_text_or_current_database_annotation
+    ranking_note: "T4 is not ranked against T1/T2 de novo tracks."
